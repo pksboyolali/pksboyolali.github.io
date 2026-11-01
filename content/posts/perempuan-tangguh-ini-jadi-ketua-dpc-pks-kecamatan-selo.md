@@ -1,0 +1,11 @@
+---
+title: "Perempuan Tangguh Ini Jadi Ketua DPC PKS Kecamatan Selo"
+date: 2021-02-22T09:11:00+07:00
+url: "/2021/02/perempuan-tangguh-ini-jadi-ketua-dpc-pks-kecamatan-selo.html"
+categories: []
+tags: []
+image: "/images/uploads/2021/02/mustaqimah-7a04ffed.png"
+draft: false
+---
+
+<p>&nbsp;<a href="/images/uploads/2021/02/mustaqimah-7a04ffed.png"><img border="0" data-original-height="1080" data-original-width="1080" height="400" src="/images/uploads/2021/02/mustaqimah-7a04ffed.png" width="400" /></a></p><br /><p><span face="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif">Perkenalkan, namanya Mbak Mustaqimah. Srikandi PKS asal Selo yang baru saja dilantik menjadi Ketua DPC di kampung halamannya.</span></p><span face="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif">Mbak Mustaqimah telah mencatat sejarah baru dalam kepengurusan PKS di Boyolali. Mbak Mus menjadi perempuan pertama yang menjadi Ketua DPC PKS di Boyolali.</span><br /><br /><span face="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif">Ketangguhan dan keberaniannya tidak perlu diragukan. Sebelumnya, Mbak Mus pernah maju dalam Pileg 2019 silam di Dapil 2 Boyolali yang meliputi Kecamatan Selo, Cepogo, dan Musuk. Dapil "neraka" di Boyolali.</span><br /><br /><span face="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif">Meski belum berhasil dalam Pileg 2019, ternyata semangat Mbak Mus tetap membara. Kini, setelah dilantik menjadi Ketua DPC PKS Selo, Mbak Mus bertekad untuk membuktikan bahwa di tangan kepemimpinan seorang perempuan, "ganasnya" Selo akan bisa diluluhkan. Insyaa Allah.</span><br /><br /><span face="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif">Pancen&nbsp;<i>wonderwoman</i>! Joss!</span><br /><br /><span face="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif">Selamat bertugas Mbak Mus. Semoga Allah senantiasa membersamai.</span><br /><br /><span face="-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif">Gaspolll!!!</span>

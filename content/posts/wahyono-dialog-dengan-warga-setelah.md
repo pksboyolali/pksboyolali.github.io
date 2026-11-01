@@ -1,0 +1,11 @@
+---
+title: "Wahyono: Dialog dengan Warga Setelah Sosialisasi Perda di Kecamatan Karanggede"
+date: 2025-03-24T02:05:00+07:00
+url: "/2025/03/wahyono-dialog-dengan-warga-setelah.html"
+categories: ["Fraksi PKS", "Inspirasi"]
+tags: []
+image: "/images/uploads/2025/03/user-g029e3wx2ave9iywe951zspuuze2-blogpost-72891d6a.jpeg"
+draft: false
+---
+
+<p><img src="/images/uploads/2025/03/user-g029e3wx2ave9iywe951zspuuze2-blogpost-72891d6a.jpeg" width="400" onclick="window.location.href=&quot;https://firebasestorage.googleapis.com/v0/b/blogger-blogspot-e0ea5.appspot.com/o/user%2Fg029e3wX2AVe9iYwE951zSpUuZE2%2Fblogpost%2F1745823986661.jpeg?alt=media&amp;token=e3e3c986-f783-43f2-ab89-cfac071a286f&quot;"></p><p>Boyolali -- setelah melakukan sosialisasi mengenai peraturan daerah (perda) di kantor kecamatan Karanggede, Wahyono mendapat kesempatan untuk bertemu langsung dengan warga (22/03). Mereka menunggu dengan antusias untuk menyampaikan berbagai keluh kesah, terutama terkait dengan proses pengajuan aspirasi untuk kelompok tani. Dalam kesempatan tersebut, Wahyono memberikan penjelasan mengenai solusi yang dapat diambil oleh warga, khususnya terkait dengan cara merapatkan kelompok tani yang sudah terdaftar. Hal ini diharapkan dapat mempermudah akses dan koordinasi bagi kelompok tani dalam mendapatkan bantuan atau informasi yang dibutuhkan.</p><p><img src="/images/uploads/2025/03/user-g029e3wx2ave9iywe951zspuuze2-blogpost-b681cd85.jpeg" width="400" onclick="window.location.href=&quot;https://firebasestorage.googleapis.com/v0/b/blogger-blogspot-e0ea5.appspot.com/o/user%2Fg029e3wX2AVe9iYwE951zSpUuZE2%2Fblogpost%2F1745823986664.jpeg?alt=media&amp;token=98bc8262-bfb4-48b9-a6a3-287dc757e161&quot;"></p><p>Selanjutnya, dalam pertemuan tersebut, warga juga mengungkapkan keluhan terkait masalah irigasi yang masih seringkali tidak lancar, yang menjadi tantangan besar bagi pertanian di daerah tersebut. Wahyono mendengarkan dengan seksama dan mengerti betul bahwa kelancaran irigasi sangat berpengaruh terhadap hasil pertanian. Ia pun berkomitmen untuk mengupayakan perbaikan sistem irigasi agar lebih efisien dan dapat mendukung produktivitas pertanian yang lebih baik. Dengan komunikasi yang terbuka ini, diharapkan aspirasi warga dapat tersalurkan dengan baik dan menjadi bahan pertimbangan dalam kebijakan yang lebih berpihak pada kebutuhan masyarakat. (nh/ta)</p>

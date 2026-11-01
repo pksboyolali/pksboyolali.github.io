@@ -1,0 +1,31 @@
+{{- /* dict: p (halaman), layout (vertical|horizontal), desc (true/false) */ -}}
+{{- $p := .p -}}
+{{- $img := partial "func/thumb.html" $p -}}
+{{- $iso := $p.Date.Format "2006-01-02T15:04:05Z07:00" -}}
+{{- if eq .layout "horizontal" }}
+<article class="group">
+  <a href="{{ $p.RelPermalink }}" class="flex flex-row bg-white shadow-md border border-pks-black-50 rounded-2xl group-hover:cursor-pointer group-hover:scale-[1.02] group-hover:shadow-lg transition-all! duration-200">
+    <div class="relative w-26 xl:w-32 shrink-0">
+      <img src="{{ $img }}" alt="{{ $p.Title }}" loading="lazy" class="absolute h-full w-full object-cover rounded-2xl shrink-0">
+    </div>
+    <div class="grow flex flex-col gap-2 p-4">
+      <h3 class="text-base xl:text-lg font-semibold text-black group-hover:text-pks-orange transition-colors duration-200">{{ $p.Title }}</h3>
+      <time class="text-xs text-pks-black-300 publish-date" datetime="{{ $iso }}">{{ $p.Date.Format "02-01-2006" }}</time>
+      {{- if .desc }}{{ partial "ringkasan.html" $p }}{{ end }}
+    </div>
+  </a>
+</article>
+{{- else }}
+<article class="group">
+  <a href="{{ $p.RelPermalink }}" class="group flex flex-col bg-white shadow-md border border-pks-black-50 rounded-2xl group-hover:cursor-pointer group-hover:scale-[1.02] group-hover:shadow-lg transition-all! duration-200">
+    <div class="relative">
+      <img src="{{ $img }}" alt="{{ $p.Title }}" loading="lazy" class="w-full h-auto object-cover aspect-video rounded-2xl">
+    </div>
+    <div class="flex flex-col gap-2 p-4">
+      <h3 class="text-base xl:text-lg font-semibold text-black group-hover:text-pks-orange transition-colors duration-200">{{ $p.Title }}</h3>
+      <time class="text-xs text-pks-black-300 publish-date" datetime="{{ $iso }}">{{ $p.Date.Format "02-01-2006" }}</time>
+      {{- if .desc }}{{ partial "ringkasan.html" $p }}{{ end }}
+    </div>
+  </a>
+</article>
+{{- end }}

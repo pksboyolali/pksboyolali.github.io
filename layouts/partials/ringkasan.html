@@ -1,0 +1,4 @@
+{{- /* Ringkasan artikel: dipotong di batas kata, titik tiga menempel pada kata terakhir, lalu "Baca selengkapnya". */ -}}
+{{- $d := "" -}}
+{{- with .Description }}{{ $d = . }}{{ else }}{{ $d = .Summary | plainify }}{{ end -}}
+<div class="text-sm text-pks-black-700">{{ $d | truncate 150 "…" }} <span class="baca-lanjut">Baca selengkapnya</span></div>

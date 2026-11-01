@@ -1,0 +1,14 @@
+---
+title: "Kader Dakwah Bergeraklah.!!!"
+date: 2013-12-07T06:08:00+07:00
+url: "/2013/12/kader-dakwah-bergeraklah.html"
+categories: ["Harokah", "Topik Pilihan"]
+tags: []
+image: "/images/uploads/2013/12/bergeraklah-bc201297.jpg"
+draft: false
+---
+
+<div class="separator">
+<a href="/images/uploads/2013/12/bergeraklah-bc201297.jpg" imageanchor="1"><img border="0" height="272" src="/images/uploads/2013/12/bergeraklah-bc201297.jpg" width="400" /></a></div>
+
+<span><span>Alam mengajarkan kita untuk senantiasa bergerak agar tercipta sebuah kesempurnaan sebagaimana fungsinya ia diciptakan.</span><br /><br /><span>Seperti air, apabila ia terus tergenang dalam sebuah wadah, maka ia akan jauh dari manfa'at.<br /><br />Menjadi&nbsp;<b><i>'ada'</i></b>&nbsp;adalah karunia, sebab kita tidak dapat meng<i>'ada'</i>kan diri kita sendiri. Tapi menjadi&nbsp;<i><b>'ada'</b></i>&nbsp;saja tidaklah cukup, kita&nbsp;<b><i>'ada'</i></b>karena diperintahkan untuk memiliki 'makna', untuk bisa ber'arti'.<br /><br />Hakikat sebuah penciptaan adalah untuk terus bergerak menghadirkan manfaat dan perubahan.&nbsp;</span><br /><br /><span>Seperti bumi dan matahari yang tak pernah malas untuk bergerak dan terus berputar pada porosnya sehingga tercipta keseimbangan alam, sebagaimana Allah berfirman:<br /><br /><i>"Dan matahari berjalan di tempat peredarannya…"</i>(Yaa Siin: 38).<br /><br /><i>"Tidakkah engkau melihat bahwa Allah menjadikan awan bergerak perlahan, kemudian mengumpulkannya, lalu Dia menjadikannya ber-tumpuk2, lalu engkau lihat hujan keluar dari celah2-nya.."</i>&nbsp;(An-Nuur: 43).<br /><br />Bergerak adalah 'keberkahan'.</span><br /><span><br />Mukmin yang cerdas adalah yang senantiasa mampu mengendalikan diri dan menata dirinya untuk hari esok. Sebagaimana ditegaskan oleh Rasulullah pada salah satu hadist-nya, bahwa&nbsp;<i>'hari ini harus lebih baik dari hari kemarin. Jika hari ini sama dengan hari kemarin, maka kita termasuk dalam golongan orang-orang yang merugi'.&nbsp;</i><br /><br />Allah SWT berfirman:<br /><br />"Hai orang-orang yang beriman, bertakwalah kepada Allah dan hendaklah setiap diri memperhatikan apa yang telah diperbuatnya untuk hari esok (akhirat), dan bertakwalah kepada Allah, sesungguhnya Allah Maha Mengetahui apa yang kamu kerjakan." (Al Hasyr: 18).<br /><br />Bagaimana mungkin kita mampu menjadi pribadi yang lebih baik dan bermanfaat jika enggan untuk bergerak?&nbsp;<br /><br />Allah telah menciptakan kita, bukan untuk menjadi sia-sia tak berguna, tapi agar dapat bermakna, bermanfaat, baik bagi agama, bangsa dan sesama.<br /><br />Maka, teruslah bergerak dengan niat yang baik&nbsp;<i>lillahi ta'ala</i>, agar menghasilkan sebuah kebaikan. Jadikan diri kita bermakna dan jangan sia-siakan karunia hidup yang telah diberikan Allah.<span><i>[frd/bbm/im]</i></span></span></span>

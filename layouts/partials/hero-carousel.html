@@ -1,0 +1,49 @@
+{{- /* Banner geser di beranda (Swiper). Isinya dari data/beranda.yaml > banner. */ -}}
+{{- $banners := . | default (slice) -}}
+{{- /* Bila belum ada banner, seluruh bagian ini tidak ditampilkan.
+       Tanpa penjagaan ini, baris ikon media sosial tampil sendirian di atas
+       beranda tanpa gambar apa pun, sehingga terlihat seperti halaman rusak. */ -}}
+{{- if $banners }}
+<div class="relative w-full mb-12">
+  <div class="rounded-2xl md:rounded-3xl shadow-lg bg-white overflow-hidden">
+    <div class="swiper hero-carousel">
+      <div class="swiper-wrapper">
+        {{- range $i, $b := $banners }}
+        <div class="swiper-slide">
+          {{- if $b.link }}
+          <a href="{{ $b.link }}" class="slider-item-wrapper group hover:ring hover:ring-inset hover:ring-pks-blue" target="_blank" rel="noopener">
+            <img class="slider-image w-full h-auto group-hover:scale-105 transition-transform duration-300" src="{{ $b.gambar }}" alt="{{ $b.alt }}" {{ if eq $i 0 }}loading="eager" fetchpriority="high"{{ else }}loading="lazy"{{ end }}>
+          </a>
+          {{- else }}
+          <div class="slider-item-wrapper">
+            <img class="slider-image w-full h-auto" src="{{ $b.gambar }}" alt="{{ $b.alt }}" {{ if eq $i 0 }}loading="eager" fetchpriority="high"{{ else }}loading="lazy"{{ end }}>
+          </div>
+          {{- end }}
+        </div>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-4 flex flex-col sm:flex-row items-center justify-center [&:has(>:nth-child(2))]:justify-between gap-2 px-2">
+    {{- if gt (len $banners) 1 }}
+    <div class="hidden md:flex items-center gap-1">
+      <button class="hero-swiper-button-prev flex items-center justify-center w-8 h-8 rounded-full bg-white hover:bg-pks-orange text-gray-800 hover:text-white shadow-md transition-all duration-200 border border-gray-200 cursor-pointer" aria-label="Slide sebelumnya">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <button class="hero-swiper-button-next flex items-center justify-center w-8 h-8 rounded-full bg-white hover:bg-pks-orange text-gray-800 hover:text-white shadow-md transition-all duration-200 border border-gray-200 cursor-pointer" aria-label="Slide berikutnya">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+    {{- end }}
+
+    <div class="flex items-center gap-2">
+      {{ partial "social-media.html" (dict "aClass" "flex! items-center justify-center group bg-white/90 hover:bg-pks-orange transition-colors duration-200 backdrop-blur-md w-10 h-10 rounded-full shadow-md border border-gray-200/80" "svgClass" "block h-5 w-5 fill-gray-600 group-hover:fill-pks-white transition-colors duration-200") }}
+    </div>
+
+    {{- if gt (len $banners) 1 }}
+    <div class="hero-swiper-pagination w-auto! hidden md:flex items-center gap-2"></div>
+    {{- end }}
+  </div>
+</div>
+{{- end }}

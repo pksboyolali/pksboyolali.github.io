@@ -1,0 +1,16 @@
+{{- /* dict: items (daftar {gambar, link, alt}), cols (1|2|3) */ -}}
+{{- $cols := .cols -}}
+{{- $grid := "w-full" -}}
+{{- if eq $cols 2 }}{{ $grid = "grid grid-cols-1 md:grid-cols-2 gap-8" }}{{ end -}}
+{{- if eq $cols 3 }}{{ $grid = "grid grid-cols-1 md:grid-cols-3 gap-8" }}{{ end -}}
+<section class="{{ $grid }}">
+  {{- range .items }}
+  {{- if .gambar }}
+  <div>
+    {{- if .link }}<a href="{{ .link }}" class="block hover:*:scale-105 md:hover:*:scale-[1.01] hover:*:shadow-lg">{{ end -}}
+    <img src="{{ .gambar }}" alt="{{ .alt }}" loading="lazy" class="w-full h-auto rounded-xl shadow-md transition-all duration-500 ease-in-out">
+    {{- if .link }}</a>{{ end }}
+  </div>
+  {{- end }}
+  {{- end }}
+</section>

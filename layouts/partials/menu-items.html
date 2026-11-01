@@ -1,0 +1,17 @@
+{{- $ctx := .ctx -}}
+{{- $here := strings.TrimSuffix "/" $ctx.RelPermalink -}}
+{{- range .items -}}
+{{- $link := partial "func/menu-link.html" . -}}
+{{- $kids := .anak -}}
+{{- $cur := and (not $kids) (eq (strings.TrimSuffix "/" $link) $here) -}}
+{{- $anc := false -}}
+{{- range $kids }}{{ if eq (strings.TrimSuffix "/" (partial "func/menu-link.html" .)) $here }}{{ $anc = true }}{{ end }}{{ end -}}
+<li class="menu-item menu-item-type-custom menu-item-object-custom{{ if $kids }} menu-item-has-children{{ end }}{{ if $cur }} current-menu-item{{ end }}{{ if $anc }} current-menu-ancestor{{ end }}">
+  <a href="{{ if $kids }}#{{ else }}{{ $link }}{{ end }}"{{ if $cur }} aria-current="page"{{ end }}>{{ .nama }}</a>
+  {{- if $kids }}
+  <ul class="sub-menu">
+    {{- partial "menu-items.html" (dict "items" $kids "ctx" $ctx) }}
+  </ul>
+  {{- end }}
+</li>
+{{- end -}}

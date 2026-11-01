@@ -1,0 +1,10 @@
+{{- /* Jejak navigasi: Beranda > Kategori > Judul. */ -}}
+<nav aria-label="Penunjuk jalan" class="text-xs text-pks-black-500 flex flex-row flex-wrap items-center gap-1 mb-4">
+  <a href="{{ "/" | relURL }}" class="hover:text-pks-orange">Beranda</a>
+  {{- if eq .Section "posts" }}
+    {{- with .GetTerms "categories" }}{{ with index . 0 }}
+  <span aria-hidden="true">&rsaquo;</span><a href="{{ .RelPermalink }}" class="hover:text-pks-orange">{{ .LinkTitle }}</a>
+    {{- end }}{{ end }}
+  {{- end }}
+  <span aria-hidden="true">&rsaquo;</span><span class="text-pks-black-300">{{ .Title | truncate 60 }}</span>
+</nav>

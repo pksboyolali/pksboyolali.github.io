@@ -1,0 +1,92 @@
+{{- /* Halaman artikel dan halaman statis. Perbedaan keduanya hanya pada
+     tampilan tanggal, tombol bagikan, dan blok "Berita Terkait". */ -}}
+{{ define "main" }}
+{{ $isPost := eq .Section "posts" }}
+{{ $idn := partialCached "func/id.html" "x" "id" }}
+{{ $atasArtikel := $idn.atas_artikel }}{{ $atasHalaman := $idn.atas_halaman }}{{ $bawah := $idn.bawah }}{{ $mengambang := $idn.mengambang }}
+{{ $img := partial "func/thumb.html" . }}
+{{ partial "breadcrumb.html" . }}
+<div class="flex flex-row gap-4">
+  <div class="grow shrink w-full">
+
+    <article class="{{ if not $isPost }}mb-20 {{ end }}flex flex-col items-start gap-4" data-pagefind-body>
+      <meta data-pagefind-meta="image[content]" content="{{ $img }}">
+
+      <div class="pks-post flex flex-col gap-4 bg-white rounded-2xl w-full shadow-md border border-gray-100">
+
+        <div class="pks-post-header p-4">
+          <h1 class="text-2xl md:text-3xl font-semibold text-black mb-4" data-pagefind-meta="title">{{ .Title }}</h1>
+          <div class="flex items-center justify-between flex-wrap gap-4">
+            {{ if not .Date.IsZero }}{{ partial "entry-meta.html" (dict "p" . "single" true) }}{{ else }}<span></span>{{ end }}
+            {{ if or (and $isPost $atasArtikel) (and (not $isPost) $atasHalaman) }}
+            <div class="{{ if $isPost }}hidden md:flex{{ else }}flex{{ end }} items-center gap-2">
+              {{ partial "social-sharing.html" (dict "type" "static" "title" .Title "url" .Permalink) }}
+            </div>
+            {{ end }}
+          </div>
+        </div>
+
+        {{/* Gambar sampul hanya ditampilkan bila gambar itu TIDAK sudah ada di awal isi.
+             Pada artikel hasil migrasi Blogger, gambar pertama isi sering sekaligus
+             dipakai sebagai gambar sampul; tanpa pemeriksaan ini gambar tampil dua kali. */}}
+        {{ $gambarIsi := "" }}
+        {{ with findRESubmatch `<img[^>]+src=["']([^"']+)["']` .Content 1 }}{{ $gambarIsi = index (index . 0) 1 }}{{ end }}
+        {{ if and .Params.image (not .Params.hide_image) (ne .Params.image $gambarIsi) }}
+        <div class="pks-post-featured-image">
+          <figure class="bg-pks-black rounded-2xl overflow-hidden w-full">
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" class="block mx-auto w-auto max-w-full h-auto max-h-[600px] rounded-2xl">
+            {{ with .Params.image_caption }}<figcaption class="p-2 text-pks-white text-sm text-center">{{ . }}</figcaption>{{ end }}
+          </figure>
+        </div>
+        {{ end }}
+
+        <div class="pks-post-content px-4">
+          {{ .Content }}
+          {{/* Daftar anggota fraksi dan susunan pengurus diambil dari front matter
+               masing-masing halaman (lihat collection "Halaman Tunggal"). */}}
+          {{ if eq .RelPermalink "/profil-fraksi/" }}{{ partial "fraksi.html" . }}{{ end }}
+          {{ if eq .RelPermalink "/profil-pengurus/" }}{{ partial "pengurus.html" . }}{{ end }}
+          {{ if eq .RelPermalink "/aspirasi/" }}{{ partial "formulir.html" (dict "page" . "jenis" "aspirasi") }}{{ end }}
+          {{ if eq .RelPermalink "/gabung/" }}{{ partial "formulir.html" (dict "page" . "jenis" "gabung") }}{{ end }}
+        </div>
+
+        <div class="pks-post-footer p-4">
+          {{ if $isPost }}
+          {{ with .GetTerms "categories" }}
+          <div class="flex flex-row flex-wrap gap-2 mb-3">
+            {{ range . }}<a href="{{ .RelPermalink }}"><span class="news-label bg-pks-black text-white text-xs inline-block px-1.5 py-0.5 rounded">{{ .LinkTitle }}</span></a>{{ end }}
+          </div>
+          {{ end }}
+          {{ end }}
+          {{ with .GetTerms "tags" }}
+          <div class="post-tags flex flex-row flex-wrap gap-2">
+            {{ range . }}<a href="{{ .RelPermalink }}"><span class="bg-pks-orange text-white text-xs inline-block px-1.5 py-0.5 rounded">#{{ .LinkTitle }}</span></a>{{ end }}
+          </div>
+          {{ end }}
+          {{ if $bawah }}
+          <div class="flex items-center gap-2 mt-4 pt-2">
+            <span class="font-semibold text-pks-orange text-sm">Bagikan</span>
+            {{ partial "social-sharing.html" (dict "type" "static" "title" .Title "url" .Permalink) }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </article>
+
+    {{ if $isPost }}
+    {{ $related := first 3 (site.RegularPages.Related .) }}
+    {{ with $related }}
+    <section class="mt-10">
+      {{ partial "section-title.html" (dict "title" "Berita Terkait") }}
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {{ range . }}{{ partial "card.html" (dict "p" . "layout" "vertical" "desc" false) }}{{ end }}
+      </div>
+    </section>
+    {{ end }}
+
+    {{ if $mengambang }}{{ partial "tombol-mengambang.html" . }}{{ end }}
+    {{ end }}
+
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,12 @@
+{{- /* satu kolom berita: dict kategori, ikon, jumlah, layout */ -}}
+{{- $t := partial "func/term.html" .kategori -}}
+{{- $layout := .layout -}}
+<div class="flex flex-col gap-4">
+  {{ partial "section-title.html" (dict "title" $t.name "icon" .ikon) }}
+  <div class="flex flex-col gap-4">
+    {{- range first .jumlah $t.pages }}{{ partial "card.html" (dict "p" . "layout" $layout "desc" false) }}{{ end }}
+    <div class="flex justify-end mt-2">
+      {{ partial "button.html" (dict "text" (printf "%s Lainnya" $t.name) "url" $t.link) }}
+    </div>
+  </div>
+</div>

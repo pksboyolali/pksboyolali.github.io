@@ -1,0 +1,14 @@
+{{- /* Halaman gabungan beberapa kategori. Daftar kategori diatur di front matter: kategori: ["A", "B"] */ -}}
+{{ define "main" }}
+<header class="mb-8">
+  <h1 class="items-center gap-4 text-3xl font-semibold text-pks-orange"><span class="text-black! font-semibold">{{ .Title }}</span></h1>
+</header>
+{{ $names := .Params.kategori }}
+{{ $all := where (where site.RegularPages "Section" "posts") "Params.categories" "intersect" $names }}
+{{ $pager := .Paginate ($all.ByPublishDate.Reverse) }}
+{{ range $pager.Pages }}{{ partial "list-item.html" . }}{{ else }}
+  {{ partial "alert.html" (dict "text" "Maaf, tidak ada berita yang ditemukan.") }}
+  {{ partial "search-form.html" . }}
+{{ end }}
+{{ partial "pagination.html" $pager }}
+{{ end }}

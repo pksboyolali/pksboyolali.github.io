@@ -1,0 +1,18 @@
+{{- $t := partial "func/term.html" .kategori -}}
+{{- $pages := first 4 $t.pages -}}
+{{- if $pages }}
+<section class="flex flex-col gap-4">
+  {{ partial "section-title.html" (dict "title" $t.name "icon" .ikon) }}
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="flex flex-col gap-6">
+      {{- range first 1 $pages }}{{ partial "card.html" (dict "p" . "layout" "vertical" "desc" true) }}{{ end }}
+    </div>
+    <div class="flex flex-col gap-6">
+      {{- range after 1 $pages }}{{ partial "card.html" (dict "p" . "layout" "horizontal" "desc" false) }}{{ end }}
+      <div class="flex justify-end mt-2">
+        {{ partial "button.html" (dict "text" (printf "%s Lainnya" $t.name) "url" $t.link) }}
+      </div>
+    </div>
+  </div>
+</section>
+{{- end }}

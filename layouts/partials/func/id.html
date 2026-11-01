@@ -1,0 +1,35 @@
+{{- /* Identitas situs: data/identitas.yaml (diedit lewat admin), cadangan: [params] di hugo.toml. */ -}}
+{{- $d := hugo.Data.identitas | default dict -}}
+{{- $p := site.Params -}}
+{{- $nama := $d.nama_situs | default site.Title -}}
+{{- $jenis := lower ($d.jenis | default "kabupaten") -}}
+{{- $w := $d.wilayah | default "" -}}
+{{- $l1 := "Dewan Pimpinan Tingkat Daerah" -}}
+{{- $l3 := "" -}}
+{{- if eq $jenis "pusat" }}{{ $l1 = "Dewan Pimpinan Tingkat Pusat" }}
+{{- else if eq $jenis "provinsi" }}{{ $l1 = "Dewan Pimpinan Tingkat Wilayah" }}{{ $l3 = printf "Provinsi %s" $w }}
+{{- else if eq $jenis "kota" }}{{ $l3 = printf "Kota %s" $w }}
+{{- else }}{{ $l3 = printf "Kabupaten %s" $w }}{{ end -}}
+{{- $soc := slice -}}
+{{- range ($d.media_sosial | default (slice)) }}{{ if .url }}{{ $soc = $soc | append (dict "name" .nama "url" .url) }}{{ end }}{{ end -}}
+{{- if not $soc }}{{ range ($p.social | default (slice)) }}{{ $soc = $soc | append (dict "name" .name "url" .url) }}{{ end }}{{ end -}}
+{{- $b := $d.bagikan | default ($p.bagikan | default dict) -}}
+{{- $atasArtikel := true }}{{ if isset $b "atas_artikel" }}{{ $atasArtikel = $b.atas_artikel }}{{ end -}}
+{{- $atasHalaman := false }}{{ if isset $b "atas_halaman" }}{{ $atasHalaman = $b.atas_halaman }}{{ end -}}
+{{- $bawah := true }}{{ if isset $b "bawah" }}{{ $bawah = $b.bawah }}{{ end -}}
+{{- $mengambang := true }}{{ if isset $b "mengambang_ponsel" }}{{ $mengambang = $b.mengambang_ponsel }}{{ end -}}
+{{- $hak := $d.teks_hak_cipta | default $p.footer_credit | default (printf "Website Resmi %s" $nama) -}}
+{{- $teksSosial := $d.teks_sosial | default (strings.TrimSpace (printf "Dapatkan info terkini via media sosial resmi PKS %s" $w)) -}}
+{{- $r := dict
+  "nama" $nama
+  "deskripsi" ($d.deskripsi | default $p.description | default "")
+  "l1" ($d.judul_baris_1 | default $p.header1 | default $l1)
+  "l2" ($d.judul_baris_2 | default $p.header2 | default "Partai Keadilan Sejahtera")
+  "l3" ($d.judul_baris_3 | default $p.header3 | default $l3)
+  "kontak" ($d.kontak | default dict)
+  "induk" ($d.induk | default $p.induk | default dict)
+  "hak" $hak
+  "teks_sosial" $teksSosial
+  "social" $soc
+  "atas_artikel" $atasArtikel "atas_halaman" $atasHalaman "bawah" $bawah "mengambang" $mengambang -}}
+{{- return $r -}}

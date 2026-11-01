@@ -1,0 +1,8 @@
+{{- /* Halaman tidak ditemukan. */ -}}
+{{ define "main" }}
+<header class="mb-8">
+  <h1 class="items-center gap-4 text-3xl font-semibold text-pks-orange">Halaman tidak ditemukan</h1>
+</header>
+{{ partial "alert.html" (dict "text" "Maaf, halaman yang Anda tuju tidak ada atau sudah dipindahkan.") }}
+{{ partial "search-form.html" . }}
+{{ end }}

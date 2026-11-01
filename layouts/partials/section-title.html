@@ -1,0 +1,8 @@
+{{- /* Judul bagian (mis. "Kiprah Kami") dengan ikon opsional. */ -}}
+<div class="flex flex-row items-center gap-2 mb-0 md:mb-4{{ with .class }} {{ . }}{{ end }}">
+  {{- with .icon }}<img src="{{ . }}" alt="{{ $.title }}" class="w-auto h-8" />{{ end }}
+  <div class="flex flex-col">
+    <h2 class="inline-flex items-stretch gap-4 text-3xl font-semibold text-pks-black">{{ .title }}</h2>
+    {{- with .description }}<span class="text-pks-black-500">{{ . }}</span>{{ end }}
+  </div>
+</div>

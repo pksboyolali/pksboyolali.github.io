@@ -1,0 +1,6 @@
+{{- /* Input: slug kategori. Output: dict name, link, pages (terbaru dulu) */ -}}
+{{- $r := dict "name" . "link" "#" "pages" slice -}}
+{{- with site.GetPage (printf "/categories/%s" .) }}
+  {{- $r = dict "name" .Title "link" .RelPermalink "pages" .Pages.ByPublishDate.Reverse -}}
+{{- end -}}
+{{- return $r -}}

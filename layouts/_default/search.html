@@ -1,0 +1,11 @@
+{{ define "main" }}
+<header class="mb-8">
+  <h1 class="items-center gap-4 text-3xl font-semibold text-pks-orange" id="search-title">Pencarian</h1>
+</header>
+<div id="search-results" class="flex flex-col gap-4"><p>Memuat&hellip;</p></div>
+<div id="search-empty" hidden>
+  {{ partial "alert.html" (dict "text" "Maaf, tidak ada berita yang ditemukan. Silakan coba lagi dengan kata kunci yang berbeda.") }}
+  {{ partial "search-form.html" . }}
+</div>
+<script type="module" src="{{ "assets/search.js" | relURL }}"></script>
+{{ end }}

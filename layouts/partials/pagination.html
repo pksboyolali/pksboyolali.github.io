@@ -1,0 +1,22 @@
+{{- /* Navigasi halaman, mengikuti page_navi() tema WordPress: Pertama, Sebelumnya, 5 angka, Selanjutnya, Terakhir */ -}}
+{{- $pg := . -}}
+{{- $max := $pg.TotalPages -}}
+{{- if gt $max 1 }}
+{{- $cur := $pg.PageNumber -}}
+{{- $start := sub $cur 2 -}}
+{{- if le $start 0 }}{{ $start = 1 }}{{ end -}}
+{{- $end := add $cur 2 -}}
+{{- if ne (sub $end $start) 4 }}{{ $end = add $start 4 }}{{ end -}}
+{{- if gt $end $max }}{{ $start = sub $max 4 }}{{ $end = $max }}{{ end -}}
+{{- if le $start 0 }}{{ $start = 1 }}{{ end -}}
+<nav class="pn" aria-label="Halaman">
+  {{- if gt $cur 1 }}<a class="pn-btn" href="{{ $pg.First.URL }}" title="Pertama">Pertama</a>{{ end }}
+  {{- if $pg.HasPrev }}<a class="pn-btn" href="{{ $pg.Prev.URL }}" rel="prev">Sebelumnya</a>{{ end }}
+  {{- range $n := seq $start $end }}
+    {{- if eq $n $cur }}<span class="pn-btn pn-current" aria-current="page">{{ $n }}</span>
+    {{- else }}<a class="pn-btn" href="{{ (index $pg.Pagers (sub $n 1)).URL }}">{{ $n }}</a>{{ end }}
+  {{- end }}
+  {{- if $pg.HasNext }}<a class="pn-btn" href="{{ $pg.Next.URL }}" rel="next">Selanjutnya</a>{{ end }}
+  {{- if lt $end $max }}<a class="pn-btn" href="{{ $pg.Last.URL }}" title="Terakhir">Terakhir</a>{{ end }}
+</nav>
+{{- end }}

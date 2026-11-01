@@ -1,0 +1,31 @@
+banner:
+  - gambar: https://cdn.s.id/images/810512fe-7910-4474-b0a2-a57a020a696e_980x381.webp.jpeg
+    link: ''
+    alt: Banner
+  - gambar: https://cdn.s.id/images/810512fe-7910-4474-b0a2-a57a020a696e_980x381.webp.jpeg
+    link: ''
+    alt: Banner
+  - gambar: https://cdn.s.id/images/810512fe-7910-4474-b0a2-a57a020a696e_980x381.webp.jpeg
+    link: ''
+    alt: Banner
+susunan:
+  - tipe: sorotan_berita
+    kategori: kiprah-kami
+    ikon: ''
+  - tipe: dua_kolom_berita
+    kolom_1:
+      kategori: seputar-pks
+      ikon: ''
+    kolom_2:
+      kategori: seputar-boyolali
+      ikon: ''
+  - tipe: tiga_kolom_berita
+    kolom_1:
+      kategori: pilkada
+      ikon: ''
+    kolom_2:
+      kategori: harokah
+      ikon: ''
+    kolom_3:
+      kategori: inspirasi
+      ikon: ''

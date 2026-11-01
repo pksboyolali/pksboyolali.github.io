@@ -1,0 +1,11 @@
+---
+title: "Nur Arifin Sampaikan Materi tentang Nilai-Nilai Pancasila di Ruang Display SMKN 1 Mojosongo"
+date: 2024-12-09T16:55:00+07:00
+url: "/2024/12/nur-arifin-sampaikan-materi-tentang.html"
+categories: ["Fraksi PKS", "Kiprah Kami"]
+tags: []
+image: "/images/uploads/2024/12/user-g029e3wx2ave9iywe951zspuuze2-blogpost-dab45c3b.jpeg"
+draft: false
+---
+
+<p><img src="/images/uploads/2024/12/user-g029e3wx2ave9iywe951zspuuze2-blogpost-dab45c3b.jpeg" width="400"></p><p>Boyolali — Pada 9 Desember 2024, Nur Arifin, Wakil Ketua DPRD Kabupaten Boyolali, menghadiri undangan dari Badan Kesatuan Bangsa dan Politik (Bakesbangpol) untuk menyampaikan materi bertajuk "Peran Organisasi dalam Pembudayaan Nilai-nilai Pancasila". Acara ini berlangsung di Ruang Display SMKN 1 Mojosongo, Boyolali.<br></p><p>Dalam penyampaiannya, Nur Arifin menyoroti beberapa poin penting terkait pembudayaan nilai-nilai Pancasila, yaitu:</p><ol><li data-list="ordered">Penyebaran Nilai-Nilai Pancasila: Mengoptimalkan peran organisasi dalam menyebarluaskan nilai-nilai luhur Pancasila kepada masyarakat.</li><li data-list="ordered">Implementasi Nilai-Nilai Pancasila dalam Kegiatan: Menerapkan nilai-nilai Pancasila secara nyata dalam setiap program dan aktivitas organisasi.</li><li data-list="ordered">Menjadi Teladan dalam Berperilaku: Mengedepankan sikap dan perilaku yang mencerminkan nilai-nilai Pancasila di kehidupan sehari-hari.</li><li data-list="ordered">Pengembangan Program yang Berbasis Pancasila: Membuat program kerja organisasi yang berlandaskan prinsip-prinsip Pancasila.</li><li data-list="ordered">Memberikan Advokasi dan Edukasi: Mengedukasi masyarakat dan memberikan advokasi yang sesuai dengan semangat Pancasila.</li></ol><p>Setelah acara, Nur Arifin menyampaikan harapannya kepada seluruh organisasi di Boyolali. “Saya berharap organisasi di Boyolali, baik itu ormas, organisasi politik, PKK, maupun yang lainnya, dapat menerapkan nilai-nilai Pancasila. Apalagi, Boyolali sudah memiliki Peraturan Daerah (Perda) dan Peraturan Bupati (Perbup) terkait. Tinggal bagaimana kita menerapkannya secara konsisten,” ujarnya.</p><p>Diharapkan, acara ini dapat mendorong organisasi-organisasi di Boyolali untuk semakin berperan aktif dalam membudayakan nilai-nilai Pancasila di tengah masyarakat. (nh/ta)</p>

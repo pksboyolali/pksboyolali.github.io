@@ -1,0 +1,316 @@
+# Daftar kecamatan dan desa/kelurahan Kabupaten Boyolali.
+# Dipakai untuk dropdown bertingkat pada formulir Aspirasi dan Gabung PKS.
+# Sumber: Wikipedia "Daftar kecamatan dan kelurahan di Kabupaten Boyolali"
+# (22 kecamatan, 261 desa + 6 kelurahan). Bila ada desa yang keliru atau berubah,
+# perbaiki langsung di sini; urutan desa di dalam kecamatan tidak harus alfabet.
+- nama: Ampel
+  desa:
+  - Banyuanyar
+  - Candi
+  - Gondang Slamet
+  - Ngampon
+  - Ngargosari
+  - Ngenden
+  - Selodoko
+  - Sidomulyo
+  - Tanduk
+  - Urutsewu
+- nama: Andong
+  desa:
+  - Andong
+  - Beji
+  - Gondang Rawe
+  - Kacangan
+  - Kadipaten
+  - Kedungdowo
+  - Kunti
+  - Mojo
+  - Munggur
+  - Pakang
+  - Pakel
+  - Pelemrejo
+  - Pranggong
+  - Semawung
+  - Sempu
+  - Senggrong
+- nama: Banyudono
+  desa:
+  - Bangak
+  - Banyudono
+  - Batan
+  - Bendan
+  - Cangkringan
+  - Denggungan
+  - Dukuh
+  - Jembungan
+  - Jipangan
+  - Ketaon
+  - Kuwiran
+  - Ngaru Aru
+  - Sambon
+  - Tanjungsari
+  - Trayu
+- nama: Boyolali
+  desa:
+  - Banaran
+  - Karanggeneng
+  - Kebonbimo
+  - Kiringan
+  - Mudal
+  - Penggung
+  - Pulisen
+  - Siswodipuran
+  - Winong
+- nama: Cepogo
+  desa:
+  - Bakulan
+  - Cabean Kunti
+  - Candigatak
+  - Cepogo
+  - Gedangan
+  - Genting
+  - Gubug
+  - Jelok
+  - Jombong
+  - Kembang Kuning
+  - Mliwis
+  - Paras
+  - Sukabumi
+  - Sumbung
+  - Wonodoyo
+- nama: Gladagsari
+  desa:
+  - Candisari
+  - Gladagsari
+  - Jlarem
+  - Kaligentong
+  - Kembang
+  - Ngadirojo
+  - Ngagrong
+  - Ngargoloka
+  - Sampetan
+  - Seboto
+- nama: Juwangi
+  desa:
+  - Cerme
+  - Jerukan
+  - Juwangi
+  - Kalimati
+  - Kayen
+  - Krobokan
+  - Ngaren
+  - Ngleses
+  - Pilangrejo
+  - Sambeng
+- nama: Karanggede
+  desa:
+  - Bangkok
+  - Bantengan
+  - Dologan
+  - Grogolan
+  - Karangkepoh
+  - Kebonan
+  - Klari
+  - Klumpit
+  - Manyaran
+  - Mojosari
+  - Pengkol
+  - Pinggir
+  - Sempulur
+  - Sendang
+  - Sranten
+  - Tegalsari
+- nama: Kemusu
+  desa:
+  - Bawu
+  - Genengsari
+  - Kedungmulyo
+  - Kedungrejo
+  - Kemusu
+  - Kendel
+  - Klewor
+  - Sarimulyo
+  - Watugede
+  - Wonoharjo
+- nama: Klego
+  desa:
+  - Bade
+  - Banyu Urip
+  - Blumbang
+  - Gondanglegi
+  - Jaten
+  - Kalangan
+  - Karanggatak
+  - Karangmojo
+  - Klego
+  - Sangge
+  - Sendangrejo
+  - Sumber Agung
+  - Tanjung
+- nama: Mojosongo
+  desa:
+  - Brajan
+  - Butuh
+  - Dlingo
+  - Jurug
+  - Karangnongko
+  - Kemiri
+  - Kragilan
+  - Madu
+  - Manggis
+  - Metuk
+  - Mojosongo
+  - Singosari
+  - Tambak
+- nama: Musuk
+  desa:
+  - Cluntang
+  - Kebongulo
+  - Kembangsari
+  - Musuk
+  - Pagerjurang
+  - Pusporenggo
+  - Ringin Larik
+  - Sruni
+  - Sukorame
+  - Sukorejo
+- nama: Ngemplak
+  desa:
+  - Dibal
+  - Donohudan
+  - Gagaksipat
+  - Giriroto
+  - Kismoyoso
+  - Manggung
+  - Ngargorejo
+  - Ngesrep
+  - Pandeyan
+  - Sawahan
+  - Sindon
+  - Sobokerto
+- nama: Nogosari
+  desa:
+  - Bendo
+  - Glonggong
+  - Guli
+  - Jeron
+  - Kenteng
+  - Ketitang
+  - Keyongan
+  - Pojok
+  - Potronayan
+  - Pulutan
+  - Rembun
+  - Sembungan
+  - Tegalgiri
+- nama: Sambi
+  desa:
+  - Babadan
+  - Canden
+  - Catur
+  - Cermo
+  - Demangan
+  - Glintang
+  - Jagoan
+  - Jatisari
+  - Kepoh
+  - Ngaglik
+  - Nglembu
+  - Sambi
+  - Senting
+  - Tawengan
+  - Tempursari
+  - Trosobo
+- nama: Sawit
+  desa:
+  - Bendosari
+  - Cepokosawit
+  - Gombang
+  - Guwokajen
+  - Jatirejo
+  - Jenengan
+  - Karangduren
+  - Kateguhan
+  - Kemasan
+  - Manjung
+  - Tegalrejo
+  - Tlawong
+- nama: Selo
+  desa:
+  - Jeruk
+  - Jrakah
+  - Klakah
+  - Lencoh
+  - Samiran
+  - Selo
+  - Senden
+  - Suroteleng
+  - Tarubatang
+  - Tlogolele
+- nama: Simo
+  desa:
+  - Bendungan
+  - Blagung
+  - Gunung
+  - Kedung Lengkong
+  - Pelem
+  - Pentur
+  - Simo
+  - Sumber
+  - Talakbroto
+  - Temon
+  - Teter
+  - Walen
+  - Wates
+- nama: Tamansari
+  desa:
+  - Dragan
+  - Jemowo
+  - Karanganyar
+  - Karangkendal
+  - Keposong
+  - Lampar
+  - Lanjaran
+  - Mriyan
+  - Sangup
+  - Sumur
+- nama: Teras
+  desa:
+  - Bangsalan
+  - Doplang
+  - Gumukrejo
+  - Kadireso
+  - Kopen
+  - Krasak
+  - Mojolegi
+  - Nepen
+  - Randusari
+  - Salakan
+  - Sudimoro
+  - Tawangsari
+  - Teras
+- nama: Wonosamodro
+  desa:
+  - Bengle
+  - Bercak
+  - Garangan
+  - Gilirejo
+  - Gunungsari
+  - Jatilawang
+  - Kalinanas
+  - Kedungpilang
+  - Ngablak
+  - Repaking
+- nama: Wonosegoro
+  desa:
+  - Bandung
+  - Banyusri
+  - Bojong
+  - Bolo
+  - Gosono
+  - Guwo
+  - Karangjati
+  - Kauman
+  - Ketoyan
+  - Lemahireng
+  - Wonosegoro

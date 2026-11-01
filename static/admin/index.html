@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Admin - DPD PKS Boyolali</title>
+
+    <!-- Ikon tab admin. Sveltia memakai logo halaman masuk (300x425, tinggi) sebagai
+         favicon sehingga di tab tampak gepeng; di sini dipaksa memakai ikon persegi
+         milik situs. Skrip di bawah menyingkirkan favicon bawaan Sveltia. -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <script>
+      (function () {
+        function bersihkan() {
+          document.querySelectorAll('link[rel="icon"]').forEach(function (l) {
+            if (!/\/images\/favicon-(32|192)\.png$/.test(l.getAttribute('href') || '')) l.remove();
+          });
+          document.querySelectorAll('link[rel="apple-touch-icon"]').forEach(function (l) {
+            if ((l.getAttribute('href') || '').indexOf('data:') === 0) l.remove();
+          });
+        }
+        bersihkan();
+        new MutationObserver(bersihkan).observe(document.head, { childList: true });
+      })();
+    </script>
+
+    <!-- Warna antarmuka diselaraskan dengan identitas PKS (oranye #FE5000).
+         Sveltia memakai variabel CSS --sui-*, jadi tampilannya bisa diubah
+         tanpa menyentuh berkas pustakanya. -->
+    <style>
+      html {
+        --sui-primary-accent-color: #fe5000 !important;
+        --sui-primary-accent-color-dark: #d94400 !important;
+        --sui-primary-accent-color-light: #ff7326 !important;
+        --sui-primary-accent-color-translucent: rgba(254, 80, 0, 0.12) !important;
+        --sui-primary-accent-color-translucent-light: rgba(254, 80, 0, 0.06) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sveltia CMS: antarmuka admin yang kompatibel dengan format konfigurasi Decap CMS.
+         Berkas pustakanya disimpan lokal (sveltia-cms.js, 2,6 MB) supaya admin tetap
+         terbuka walau CDN lambat/terblokir — penyebab halaman berputar terus.
+         Cadangan: bila berkas lokal tidak ada, muat dari CDN. -->
+    <script src="sveltia-cms.js"
+            onerror="this.onerror=null;this.src='https://unpkg.com/@sveltia/cms@0.256.1/dist/sveltia-cms.js'"></script>
+  </body>
+</html>

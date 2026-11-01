@@ -1,0 +1,11 @@
+---
+title: "Banjir Bandang di Desa Kendel, Kecamatan Kemusu, Boyolali"
+date: 2025-03-03T13:23:00+07:00
+url: "/2025/03/banjir-bandang-di-desa-kendel-kecamatan.html"
+categories: ["Fraksi PKS", "Kiprah Kami"]
+tags: []
+image: "/images/uploads/2025/03/user-g029e3wx2ave9iywe951zspuuze2-blogpost-aadcd7b5.jpeg"
+draft: false
+---
+
+<p><img src="/images/uploads/2025/03/user-g029e3wx2ave9iywe951zspuuze2-blogpost-aadcd7b5.jpeg" width="400" onclick="window.location.href=&quot;https://firebasestorage.googleapis.com/v0/b/blogger-blogspot-e0ea5.appspot.com/o/user%2Fg029e3wX2AVe9iYwE951zSpUuZE2%2Fblogpost%2F1741760781480.jpeg?alt=media&amp;token=a26c3fb4-0243-4638-bc3f-2c70b072ca02&quot;"></p><p>Pada tanggal 2 Maret 2025, telah terjadi musibah banjir bandang di Dukuh Gagan dan Dukuh Glinggang, Desa Kendel, Kecamatan Kemusu, Boyolali. Banjir ini disebabkan oleh meluapnya air sungai setelah hujan deras yang mengguyur wilayah tersebut semalam. Akibatnya, sekitar 150 rumah terendam banjir setinggi 1 meter. Selain itu, banjir juga menyebabkan putusnya jembatan penghubung antara Dukuh Gagan dan Dukuh Glinggang.</p><p>Mendapatkan informasi mengenai musibah ini, Wahyono, Wakil Ketua Komisi IV, Fraksi PKS, segera menghubungi pihak terkait, yaitu BPBD Boyolali, yang diwakili oleh Bapak Suratno. Tim tanggap darurat langsung diturunkan ke lokasi untuk memberikan bantuan.</p><p><img src="/images/uploads/2025/03/user-g029e3wx2ave9iywe951zspuuze2-blogpost-cbcb191e.jpeg" width="400" onclick="window.location.href=&quot;https://firebasestorage.googleapis.com/v0/b/blogger-blogspot-e0ea5.appspot.com/o/user%2Fg029e3wX2AVe9iYwE951zSpUuZE2%2Fblogpost%2F1741760781484.jpeg?alt=media&amp;token=8c368654-e4fc-48f1-ad80-2f30ed59d1bc&quot;"></p><p>Wahyono juga menghubungi lembaga kemanusiaan untuk meminta bantuan sembako yang mendesak, mengingat banyak keluarga yang kehilangan persediaan makanan akibat terendam banjir. Alhamdulillah, pada hari ini, 50 paket sembako berhasil disalurkan kepada keluarga-keluarga yang paling membutuhkan.</p><p>Namun, jumlah bantuan yang diterima masih dirasa kurang. Wahyono berharap agar segera ada bantuan tambahan dari Pemkab Boyolali untuk meringankan beban para korban (info/cakin).</p>

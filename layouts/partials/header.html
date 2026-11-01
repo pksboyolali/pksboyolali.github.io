@@ -1,0 +1,80 @@
+{{- /* Header: logo + judul 3 baris, menu utama (dropdown), tombol menu ponsel,
+     dan kotak pencarian yang muncul saat ikon kaca pembesar diklik. */ -}}
+<div class="whitespace hidden md:block h-10 w-full"></div>
+<header id="header" class="sticky w-full top-0 z-10 bg-pks-white/80 backdrop-blur-3xl border-b-2 border-pks-white/90">
+  <div class="container max-w-7xl mx-auto px-2 flex flex-row items-center justify-between">
+    {{/* min-w-0 + tanpa shrink-0: judul 3 baris di ponsel bisa memanjang.
+         Tanpa ini, blok logo tidak mau mengecil dan tombol menu terdorong
+         keluar layar (halaman jadi bisa digeser ke samping). */}}
+    <a id="logo" class="px-2 md:px-4 py-4 text-pks-black! flex flex-row gap-3 md:gap-6 items-center min-w-0" href="{{ "/" | relURL }}">
+      <img src="{{ "images/logo-pks.png" | relURL }}" alt="Logo PKS" class="inline-block logo h-16 md:h-24 shrink-0">
+      <div class="flex flex-col min-w-0">
+        {{- $id := partialCached "func/id.html" "x" "id" }}
+        <span class="text-xs md:text-sm">{{ $id.l1 }}</span>
+        <span class="text-base md:text-xl font-semibold">{{ $id.l2 }}</span>
+        {{- with $id.l3 }}<span class="text-sm md:text-xl font-semibold">{{ . }}</span>{{ end }}
+      </div>
+    </a>
+
+    <nav class="nav-primary hidden lg:flex lg:items-center lg:gap-4" aria-label="Menu utama">
+      <div class="menu-beranda-container"><ul id="menu-main-menu" class="nav flex flex-row justify-center items-center gap-2">
+        {{- partial "menu-items.html" (dict "items" (hugo.Data.menu | default dict).items "ctx" .) }}
+      </ul></div>
+      <a href="#search-pks" class="search-icon-trigger scale-110 hover:scale-150 transition-transform!" aria-label="Cari">
+        <svg class="fill-pks-orange hover:fill-pks-orange" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 6.5C13 7.9375 12.5312 9.28125 11.75 10.3438L15.6875 14.3125C16.0938 14.6875 16.0938 15.3438 15.6875 15.7188C15.3125 16.125 14.6562 16.125 14.2812 15.7188L10.3125 11.75C9.25 12.5625 7.90625 13 6.5 13C2.90625 13 0 10.0938 0 6.5C0 2.9375 2.90625 0 6.5 0C10.0625 0 13 2.9375 13 6.5ZM6.5 11C8.09375 11 9.5625 10.1562 10.375 8.75C11.1875 7.375 11.1875 5.65625 10.375 4.25C9.5625 2.875 8.09375 2 6.5 2C4.875 2 3.40625 2.875 2.59375 4.25C1.78125 5.65625 1.78125 7.375 2.59375 8.75C3.40625 10.1562 4.875 11 6.5 11Z"/>
+          </svg>
+      </a>
+    </nav>
+
+    <div class="flex items-center lg:hidden shrink-0">
+      <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-full text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pks-orange" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="sr-only">Buka menu</span>
+        <svg id="burger-icon" class="block h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#FE5000" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+        <svg id="close-icon" class="hidden h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#FE5000" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="container max-w-7xl mx-auto px-4 flex flex-col items-start justify-end">
+    <nav id="mobile-menu" class="nav-primary py-4 hidden flex-col w-full gap-4 lg:hidden" aria-label="Menu utama (ponsel)">
+      <div class="menu-beranda-container"><ul id="menu-main-menu-mobile" class="nav flex flex-col gap-4">
+        {{- partial "menu-items.html" (dict "items" (hugo.Data.menu | default dict).items "ctx" .) }}
+      </ul></div>
+      <a href="#search-pks" class="search-icon-trigger flex flex-row items-center gap-2">
+        <svg class="fill-pks-orange hover:fill-pks-orange" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 6.5C13 7.9375 12.5312 9.28125 11.75 10.3438L15.6875 14.3125C16.0938 14.6875 16.0938 15.3438 15.6875 15.7188C15.3125 16.125 14.6562 16.125 14.2812 15.7188L10.3125 11.75C9.25 12.5625 7.90625 13 6.5 13C2.90625 13 0 10.0938 0 6.5C0 2.9375 2.90625 0 6.5 0C10.0625 0 13 2.9375 13 6.5ZM6.5 11C8.09375 11 9.5625 10.1562 10.375 8.75C11.1875 7.375 11.1875 5.65625 10.375 4.25C9.5625 2.875 8.09375 2 6.5 2C4.875 2 3.40625 2.875 2.59375 4.25C1.78125 5.65625 1.78125 7.375 2.59375 8.75C3.40625 10.1562 4.875 11 6.5 11Z"/>
+          </svg>
+        Cari konten
+      </a>
+    </nav>
+  </div>
+</header>
+
+<div id="search-box" class="flex items-center justify-center fixed top-0 left-0 w-full h-full z-30">
+  <div id="search-overlay" class="absolute top-0 left-0 w-full h-full bg-black/80 backdrop-blur"></div>
+  <div class="container max-w-5xl mx-auto px-4 flex flex-col items-center relative z-10">
+    <div class="flex-row items-center gap-3 px-4 mb-4 flex md:hidden">
+      {{ partial "social-media.html" (dict "svgClass" "h-5 w-5 fill-white") }}
+    </div>
+    <form role="search" method="get" id="search-form" class="group search-form relative flex flex-row items-center w-full max-w-2xl bg-white border border-gray-400 rounded-full px-4 md:px-8 gap-1" action="{{ with site.GetPage "/cari" }}{{ .RelPermalink }}{{ else }}{{ "cari/" | relURL }}{{ end }}">
+      <input id="search-box-input" class="search-input w-full text-pks-black text-base py-2 md:py-4 focus:outline-none" type="text" name="q" autocomplete="off" placeholder="Cari berita, tokoh, atau topik" aria-label="Kata kunci pencarian">
+      <button id="search-submit" type="submit" class="search-submit cursor-pointer" aria-label="Cari">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 21L16.66 16.66" stroke="#FD5000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#FD5000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </form>
+    <p class="pointer-events-none md:inline-block hidden text-white text-sm text-center mx-auto mt-4">
+      Klik area blur atau tekan tombol <kbd class="bg-gray-300 text-black py-0.5 px-1 border-black rounded-sm mx-1">Esc</kbd> untuk menutup form ini.
+    </p>
+    <p class="pointer-events-none inline-block md:hidden text-white text-sm text-center mx-auto mt-4">
+      Klik area blur untuk menutup form ini.
+    </p>
+  </div>
+</div>

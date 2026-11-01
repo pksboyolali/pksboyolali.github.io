@@ -1,0 +1,12 @@
+---
+title: "PKS: Dana Rp 1 T Lebih Baik untuk Rakyat"
+date: 2015-03-17T06:25:00+07:00
+url: "/2015/03/pks-dana-rp-1-t-lebih-baik-untuk-rakyat.html"
+categories: ["Topik Pilihan", "Seputar PKS"]
+tags: []
+image: "/images/uploads/2015/03/jazuli-juwaini-52a5eba9.jpg"
+draft: false
+---
+
+<img src="/images/uploads/2015/03/jazuli-juwaini-52a5eba9.jpg" /><br />
+<span>Sah-sah saja partai politik mendapat bantuan dana dari pemerintah. Namun, hal itu disayangkan mengingatkan saat ini masih banyak pekerjaan lain yang menjadi prioritas pemerintah dibanding menggelontorkan dana Rp 1 triliun untuk setiap parpol.</span><br /><br /><span>Ketua Fraksi Partai Keadilan Sejahtera (PKS) Jazuli Juwaini menegaskan hal tersebut saat dihubungi wartawan (Senin, 16/3).</span><br /><br /><span>"Yang harus dilakukan pemerintah itu harus lebih semangat menggenjot untuk mengentaskan kemiskinan, menggenjot menaikkan taraf hidup rakyat," ujar penantang Ratu Atut dalam Pilgub Banten 2011 itu.</span><br /><br /><span>Jazuki menyatakan program Anggaran Pendapatan dan Belanja Negara (APBN) tidak boleh mengganggu program-program wajib dan prioritas dari pemerintah.</span><br /><br /><span>Seperti diberitakan sebelumnya, Menteri Dalam Negeri Tjahyo Kumolo mewacanakan alokasi dana sebesar Rp 1 triliun dari APBN untuk partai-partai politik. Mantan Sekjen PDIP ini beralasan antara lain sebagai upaya menghindari politikus yang duduk di legislatif maupun eksekutif dari fokus ke membiayai partai.</span><br /><br /><span>Namun, menurut politikus PKS, Hidayat Nur Wahid, wacana ini justru terkesan terburu-buru dari pemerintah kepada legislatif dan juga politisi.“Nggak ada babibu, tiba-tiba ada wacana Rp 1 triliun untuk partai politik. Ini dampaknya (buruk) bagi partai politik. Yang di-</span><i>bully</i><span>, partai politik. Padahal kita nggak pernah berpikir atau&nbsp;</span><i>ngomongin</i><span>&nbsp;itu. Partai politik tidak pernah bicara tentang anggaran Rp 1 triliun,” kata Hidayat, Selasa pekan lalu (10/3), seperti dilansir&nbsp;</span><i>ROL</i><span>.</span><br /><br /><span>Hidayat memandang, wacana ini kontraproduktif. Apalagi, bila anggaran sebesar Rp 1 triliun itu diambil dari APBN meskipun dengan alasan untuk menekan tingkat perilaku korupsi para politikus. Hidayat melihat pula, wacana dari pemerintah ini cenderung memposisikan DPR, sekali lagi, berkonfrontasi dengan publik.</span><br /><br /><span>“Dikhawatirkan, justru ini PR lagi bagi DPR dan parpol. Sibuk lagi kita menjawab tuduhan-tuduhan publik,” kata Hidayat Nur Wahid.</span>

@@ -1,0 +1,11 @@
+---
+title: "Musda DPTD PKS Dapil V Jateng: Dorong Dukungan RUU Perampasan Aset dan Program MBG"
+date: 2025-09-07T17:06:00+07:00
+url: "/2025/09/musda-dptd-pks-dapil-v-jateng-dorong.html"
+categories: ["Kiprah Kami"]
+tags: []
+image: "/images/uploads/2025/09/user-g029e3wx2ave9iywe951zspuuze2-blogpost-1666c0c4.jpeg"
+draft: false
+---
+
+<p><img src="/images/uploads/2025/09/user-g029e3wx2ave9iywe951zspuuze2-blogpost-1666c0c4.jpeg" width="400"></p><p>Boyolali, Ahad 7 September 2025 — Dewan Pengurus Tingkat Daerah (DPTD) Partai Keadilan Sejahtera (PKS) Daerah PemilihanV menggelar Musyawarah Daerah (Musda) Ke-VI di Kantor DPD PKS Boyolali. Musda kali ini diikuti oleh Anggota DPTD periode 2020–2025 dan periode 2025–2030, serta berlangsung lancar dan penuh semangat kebersamaan.</p><p>Hadir dalam kegiatan ini Ketua Fraksi PKS DPR RI, <strong>Dr. H. Abdul Kharis Almasyhari, SE, M.Si</strong>, Bendahara DPW PKS Jawa Tengah, <strong>H. Narso</strong>, Ketua Dewan Dakwah Jawa Tengah, <strong>H. Daryono, ST, M.Si</strong>, serta Anggota DPRD Provinsi Jawa Tengah, <strong>Tugiman dan Martono</strong>.</p><p>Musda kali ini menegaskan dua amanah penting, yaitu:</p><ol><li data-list="ordered">Dukungan penuh terhadap RUU Perampasan Aset, sebagai langkah nyata pemberantasan korupsi dan penegakan hukum yang berkeadilan.</li><li data-list="ordered">Dukungan terhadap Program MBG (Makan Bergizi Gratis), sesuai hasil survei yang menunjukkan 82% masyarakat menyatakan setuju dengan program ini.</li></ol><p>Ketua DPD PKS Boyolali periode 2025–2030, <strong>Wahyono, S.Pi</strong>, menyampaikan bahwa PKS Boyolali berkomitmen untuk mendukung kebijakan yang pro-rakyat.</p><blockquote>“PKS Boyolali akan terus mendorong RUU Perampasan Aset, mendukung program pemerintah seperti MBG, serta program-program lainnya yang berpihak kepada rakyat. Kami siap menjadi mitra pemerintah yang kritis, konstruktif, dan solutif. Target kami di Boyolali adalah minimal tujuh kursi DPRD,” tegas <strong>Wahyono</strong>.</blockquote><p>Musda ini diharapkan semakin menguatkan soliditas PKS Boyolali untuk melayani masyarakat, memperjuangkan aspirasi rakyat, dan menghadirkan solusi nyata bagi kesejahteraan daerah. (humas)</p>

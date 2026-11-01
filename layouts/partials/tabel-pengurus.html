@@ -1,0 +1,16 @@
+{{- /* Tabel kecil berisi nama dan jabatan. Dipakai partial pengurus.html. */ -}}
+<div class="pg-tabel-bungkus">
+  <table class="pg-tabel">
+    <thead>
+      <tr><th>Nama</th><th>Jabatan</th></tr>
+    </thead>
+    <tbody>
+      {{- range . }}
+      <tr class="pg-baris" data-nama="{{ lower .nama }}">
+        <td>{{ .nama }}</td>
+        <td>{{ .jabatan }}</td>
+      </tr>
+      {{- end }}
+    </tbody>
+  </table>
+</div>

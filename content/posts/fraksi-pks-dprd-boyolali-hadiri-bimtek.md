@@ -1,0 +1,11 @@
+---
+title: "Fraksi PKS DPRD Boyolali Hadiri BIMTEK Se-Jawa Timur, Jawa Tengah, dan DIY"
+date: 2024-12-19T12:43:00+07:00
+url: "/2024/12/fraksi-pks-dprd-boyolali-hadiri-bimtek.html"
+categories: ["Fraksi PKS", "Kiprah Kami", "Inspirasi"]
+tags: []
+image: "/images/uploads/2024/12/user-g029e3wx2ave9iywe951zspuuze2-blogpost-77b107c7.jpeg"
+draft: false
+---
+
+<p><img src="/images/uploads/2024/12/user-g029e3wx2ave9iywe951zspuuze2-blogpost-77b107c7.jpeg" width="400" onclick="window.location.href=&quot;https://firebasestorage.googleapis.com/v0/b/blogger-blogspot-e0ea5.appspot.com/o/user%2Fg029e3wX2AVe9iYwE951zSpUuZE2%2Fblogpost%2F1735282098177.jpeg?alt=media&amp;token=6760229e-57d8-43f0-aba2-327f4e332a2f&quot;"></p><p>Boyolali, 20 Desember 2024 – Fraksi PKS DPRD Boyolali turut hadir dalam agenda Bimbingan Teknis (BIMTEK) yang diadakan untuk anggota Fraksi PKS se-wilayah Jawa Timur, Jawa Tengah, dan Daerah Istimewa Yogyakarta. Kegiatan ini berlangsung selama empat hari, mulai 17 hingga 20 Desember 2024.</p><p>Dalam agenda tersebut, para anggota Fraksi PKS mengikuti berbagai sesi pelatihan dan diskusi strategis yang dirancang untuk memperkuat kapasitas, wawasan, serta komitmen perjuangan dalam mengawal aspirasi rakyat. Kehadiran Fraksi PKS Boyolali di forum ini menjadi bagian dari upaya untuk terus memaksimalkan peran sebagai wakil rakyat demi mewujudkan keadilan dan kesejahteraan di Boyolali tercinta.</p><p><img src="/images/uploads/2024/12/user-g029e3wx2ave9iywe951zspuuze2-blogpost-967ec6e1.jpeg" width="400" onclick="window.location.href=&quot;https://firebasestorage.googleapis.com/v0/b/blogger-blogspot-e0ea5.appspot.com/o/user%2Fg029e3wX2AVe9iYwE951zSpUuZE2%2Fblogpost%2F1735282098179.jpeg?alt=media&amp;token=ae95d98a-a461-4d91-9a96-9befb3fa7565&quot;"></p><p>“Kami berharap momentum ini dapat semakin menguatkan langkah dan nafas perjuangan menuju masyarakat Boyolali yang adil, makmur, dan sejahtera”, ujar Ketua Fraksi</p><p>Fraksi PKS DPRD Boyolali menegaskan komitmennya untuk terus menjadi mitra rakyat yang konsisten dalam menyuarakan kebaikan dan membawa perubahan positif di daerah.</p><p>Mari bersama kita doakan agar perjuangan ini senantiasa diridhai oleh Allah SWT. Boyolali untuk semua, menuju masa depan yang lebih cerah!</p>

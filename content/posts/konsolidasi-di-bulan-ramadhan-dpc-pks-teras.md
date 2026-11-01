@@ -1,0 +1,11 @@
+---
+title: "Konsolidasi di Bulan Ramadhan, DPC PKS Teras Gelar Rakercab dan Buka Puasa Bersama"
+date: 2021-04-19T11:18:00+07:00
+url: "/2021/04/konsolidasi-di-bulan-ramadhan-dpc-pks-teras.html"
+categories: []
+tags: []
+image: "/images/uploads/2021/04/whatsapp-image-2021-04-18-at-20-15-24-12bc2ae4.jpeg"
+draft: false
+---
+
+<div class="separator"><a href="/images/uploads/2021/04/whatsapp-image-2021-04-18-at-20-15-24-12bc2ae4.jpeg" imageanchor="1"><img border="0" data-original-height="780" data-original-width="1040" height="480" src="/images/uploads/2021/04/whatsapp-image-2021-04-18-at-20-15-24-12bc2ae4.jpeg" width="640" /></a></div><p>DPC PKS Kecamatan Teras mengadakan Rapat Kerja Cabang (Rakercab) pada Ahad, 18 April 2021.</p><p>Kegiatan ini dilaksanakan untuk menyampaikan hasil Rakerda DPD PKS Kabupaten Boyolali yang telah terlaksana pada 10 April 2021 yang lalu, serta program kerja DPC PKS Teras.</p><p>Hadir dalam Rakercab, Ketua DPD PKS Boyolali, Bapak Nur Arifin memberikan arahan dan mengajak seluruh pengurus, kader dan simpatisan PKS Kecamatan Teras untuk segera menyusun strategi pemenangan pemilu 2024.</p><p>Nur Arifin menyampaikan, "PKS merupakan satu-satunya partai oposisi di Boyolali. Ini adalah momentum yang tepat untuk mengakomodir suara rakyat sebagai penyeimbang perpolitikan di Boyolali. Kita adalah partai besar ke-2 di Boyolali, oleh karena itu kader dan struktur harus kuat."&nbsp;&nbsp;</p><p>Dwi Marsudi, ketua DPC PKS Kecamatan Teras memaparkan 4 strategi pemenangan pemilu 2024. Pertama, penguatan struktur dan Caleg. Kedua, penguatan finansial. Ketiga, penyiapan saksi dan kader yang militan, dan yang keempat, memperbanyak pelayanan kepada masyarakat.&nbsp;</p><p>Turut pula memberikan arahan, Ahyani, Ketua Bidang Pembinaan Cabang (BPC) 1 Boyolali. Ahyani menegaskan, "Seluruh pengurus dan anggota PKS harus paham partai ini tidak sekedar partai politik, namun juga sebagai wasilah dakwah di parlemen, agar suara rakyat dan suara umat tetep terjaga di Boyolali. Untuk itu mari kita rapatkan barisan untuk bersama menang rakyat di 2024."</p><p>Dalam Rakercab ini juga dilakukan serah terima SK dan AD/ART PKS oleh ketua DPC PKS Kecamatan Teras, Dwi Marsudi, kepada Pengurus DPRa.</p><p>Rakercab DPC PKS Kecamatan Teras berlangsung dengan suasana kekeluargaan, dan diakhiri dengan kegiatan buka puasa bersama.</p><br />

@@ -1,0 +1,86 @@
+# Gambar luar yang tidak bisa diselamatkan
+
+Gambar-gambar ini menunjuk ke situs lain yang sudah mati (atau memblokir unduhan), sehingga tidak bisa dipindahkan ke repo.
+Tag gambarnya sudah dibuang dari artikel agar tidak muncul ikon rusak.
+Bila foto tersebut penting, unggah ulang lewat panel admin.
+
+| Alamat asli |
+| --- |
+| http://www.islampos.com/wp-content/uploads/2012/10/Ribu-Jamaah-Haji-Di-Mekkah.jpg?1d327d |
+| http://pksjateng.or.id/foto/7f223440e3f8d059bf4e53a76b737977.jpg |
+| http://pksjateng.or.id/foto/bb6331ca4cc3965e40524da4f929a777.jpg |
+| http://www.timlo.net/wp-content/uploads/2015/05/220515-Kejaksaan-Negeri-Boyolali-panggil-dua-pejabat-DPPKAD-terkait-dugaan-penyimpangan-dalam-penyaluran-dana-hibah-2014.jpg |
+| http://pksjateng.or.id/foto/f381938711effcb17075197fe4926da0.jpg |
+| http://statis.dakwatuna.com/wp-content/uploads/2013/02/kader-pks-270x320.jpg |
+| http://pksjateng.or.id/foto/a31a9dc90c4bd23cae7b2bdd4225fbd2.jpg |
+| http://pksjateng.or.id/foto/2548c906115a36851db35a52c28f0013.jpg |
+| http://islamediaonline.files.wordpress.com/2013/11/pemulung.jpg |
+| http://pks-solo.or.id/images/contents/anis%20matta.jpg |
+| http://www.timlo.net/wp-content/uploads/2014/03/170314-Ali-Fachrudin-anggota-KPUD-Boyolaliberharap-parpol-mengirimkan-kegiatan-kampanye.jpg |
+| http://www.timlo.net/wp-content/uploads/2014/11/051114-Krisis-air-makin-parah-dialami-masyarakat-Selo.jpg |
+| http://pks-solo.or.id/images/foto/ust-hatta.jpg |
+| http://pksjateng.or.id/foto/90efbca13aa1f6049d0a8a7d53c24405.jpg |
+| http://www.timlo.net/wp-content/uploads/2015/05/150515-Nilai-UN-tingkat-SMA-MA-dan-SMK-di-Kabupaten-Boyolali-menurunnamun-peringkat-se-Jawa-Tengah-meningkat-menjadi-6-peringkat-dari-tahun-sebelumnya-di-12-peringkat.jpg |
+| http://pksjateng.or.id/foto/0c0913668e537b0b1a4b5686de517cad.jpg |
+| http://kumpulanbiografiulama.files.wordpress.com/2013/03/hadratus-syekh-kh-hasyim-asyari.jpg |
+| http://1.bp.blogspot.com/-ILbzA0fPHjQ/TwF7esORLrI/AAAAAAAAIcU/mJiVDxzPhcM/s1600/HILMI+9.gif |
+| http://pksjateng.or.id/foto/a976624a585a3048bd1df23a75e4f37f.jpg |
+| http://pks.or.id/contentAsset/resize-image/f34f5f72-2a7d-42a6-b06b-83b032beebd2/image/?byInode=true&w=250 |
+| http://www.timlo.net/wp-content/uploads/2015/05/170515-Pemkab-Boyolali-gelar-Festival-Kuliner.jpg |
+| http://pksjateng.or.id/foto/748c21d7bdab7da396e4bee61b9c945a.jpg |
+| http://onedayonejuz.org/wp-content/uploads/2013/12/Berlomba-Dalam-Kebaikan-297x300.png |
+| http://pks-solo.or.id/images/foto/KonsolidasiHumas.jpg |
+| http://pksjateng.or.id/foto/3e71ea09fd9513758f8bd8abb9aeb889.jpg |
+| http://www.timlo.net/wp-content/uploads/2015/02/pilkada.png |
+| http://pksjateng.or.id/foto/71fb653eb9c30f218fb8aeeda189e22c.jpg |
+| http://statis.dakwatuna.com/wp-content/uploads/2013/02/gatot-pujo-nugroho-dan-Tengku-Erry-Nuradi-320x240.jpg |
+| http://pks.or.id/contentAsset/resize-image/72eee709-fcda-44c6-9676-26de1f9a7a6d/image/?byInode=true&w=250 |
+| http://www.timlo.net/wp-content/uploads/2013/01/kates.jpg |
+| http://pks.or.id/contentAsset/resize-image/0921bb51-4fdf-4149-8246-d917f23b45a6/image/?byInode=true&w=250 |
+| http://pksjateng.or.id/foto/24c0d0d8f6017aaacc07c7c2e69e86a7.jpg |
+| http://pks.or.id/contentAsset/resize-image/dbec49c4-31a8-48d2-a495-c482de3e2456/image/?byInode=true&w=250 |
+| http://www.timlo.net/wp-content/uploads/2014/09/290914-Pelantikanketua-DPRD-dan-Wakil-Ketua-DPRD-Boyolali-empat-Perda-Krusial-menanti.jpg |
+| http://pksjateng.or.id/foto/dc84b0ae796f759d0e504b8f8442542d.jpg |
+| http://pks.or.id/contentAsset/resize-image/fd37d47b-bd84-4ab4-8478-c5539a63fc2e/image/?byInode=true&w=250 |
+| http://pksjateng.or.id/foto/f60b6ce9b889c6818f38889f21f35beb.jpg |
+| https://blogger.googleusercontent.com/img/proxy/AVvXsEgr9N9wrsvUt70ttR5RL73swYSjheGiwwhoel1VOgYsdndiXr1iRneb7SNpi1QjRAXc04bVhFGOwTck__9riRBLNk87UUs8gt95rya96wlwXr8Q9OmlEOuYFntR0UW0VvYYvutSzYUpot4KJtW_gKRF_-6fOFJhBpRZq1_YTycPr7TEwDmjQkqRiQ= |
+| https://blogger.googleusercontent.com/img/proxy/AVvXsEi29mS_AXKjUQCgCmOod8LcAIjOTyu39WVSsknuiZhnZnZPcsHeHglwBPDp0fr37dVOZ-Si2IiF-Oonu8bz8WBXoC_r3vuM0HyazCcO8XHFCxNUHfDkYbvaRMvFUSDzAqlucEsVrzzndujn9Qwf__VuHcjxuxUKQJAUA0PTOQEQ-Ef0ALwa5FxaoA= |
+| http://pksjateng.or.id/foto/bd2f5262262e74416333514dafa01322.jpg |
+| http://pksjateng.or.id/foto/d31d98ddbd93f0b3095d7b0a68a2665e.jpg |
+| http://pks.or.id/contentAsset/resize-image/0106287f-c01e-42e0-b1a1-fbe0b6fa4d4e/image/?byInode=true&w=250 |
+| http://pksjateng.or.id/foto/b758a2b935fe0d72533836049872aab9.jpg |
+| http://pks.or.id/contentAsset/resize-image/08bc8584-d1dc-44ec-a5cd-11b7736303c6/image/?byInode=true&w=250 |
+| http://pksjateng.or.id/foto/f79ae2d87584d68afcae572113466f94.jpg |
+| http://pksjateng.or.id/foto/d186b44a7f89bba81326c7a7f6f01bf4.jpg |
+| http://pksjateng.or.id/foto/6a9502183528ab06710638831a974a28.jpg |
+| http://pks.or.id/contentAsset/resize-image/3c779a3e-65ef-47a5-ba3c-dd953d70e144/image/?byInode=true&w=250 |
+| http://pks.or.id/contentAsset/resize-image/bc08e7e5-b733-4f73-a738-7c435551c8cb/image/?byInode=true&w=250 |
+| http://pksjateng.or.id/foto/6e01bb2209e5f6f854ccf5e82927305f.jpg |
+| http://pks.or.id/contentAsset/resize-image/4f9b2866-83df-4d1d-95ed-5f2583c81934/image/?byInode=true&w=250 |
+| http://pks.or.id/contentAsset/resize-image/e471dce0-19af-4f53-83cb-8f781aadc8a8/image/?byInode=true&w=250 |
+| http://www.timlo.net/wp-content/uploads/2014/06/170614-Pemkab-Boyolali-siapkan-anggaran-Rp-105-Juta-untuk-droping-air-menjelang-musim-kemarau.jpg |
+| http://www.anismatta.net/wp-content/uploads/2014/08/IMG-20140818-WA0000.jpg |
+| http://pksjateng.or.id/foto/89353655d9bc2708a32bd698655330f2.jpg |
+| http://pks.or.id/contentAsset/resize-image/6075ada9-8729-4d25-b956-adab9a8ac2b9/image/?byInode=true&w=250 |
+| http://pks.or.id/contentAsset/resize-image/f5ea3bc7-9b4e-4bd3-a544-5b9aaae306b7/image/?byInode=true&w=250 |
+| http://pks.or.id/contentAsset/resize-image/99cde080-b57b-40c1-bcec-1019652204a6/image/?byInode=true&w=250 |
+| http://pksjateng.or.id/foto/2778eb7006f70de0b648048893794c1d.jpg |
+| http://pks-solo.or.id/images/contents/reses%20khoris%202.jpg |
+| https://scontent-hkg3-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/11209634_797986943630589_5652568756410618905_n.jpg?_nc_eui=AWhV7CdcyEhf-JrAClNADJyia0tlofeX7oaNkQ&oh=8ac923b10d6ca073c50d309c8fb616bc&oe=55FD11F1 |
+| http://www.pks.or.id/contentAsset/resize-image/678e13be-499d-4de0-9a4f-f23d06ddf35e/image/?byInode=true&w=250 |
+| http://pks.or.id/contentAsset/resize-image/b16f1b11-f447-4335-a035-2257a3446f54/image/?byInode=true&w=250 |
+| http://www.pks.or.id/resize_image?path=/dotAsset/dbc162f7-f555-42b9-b37b-0be116dee6c7&w=680&h=396 |
+| http://www.nabawia.com/files/contents/2266/2266-detail.jpg |
+| http://cdn.sindonews.net/dyn/620/content/2014/10/27/132/916061/serah-terima-jabatan-dari-menkominfo-k6J.jpg |
+| http://pksjateng.or.id/foto/39f52ec5682903a319452df88ea36662.jpg |
+| http://pksjateng.or.id/foto/00a67f8d8caf3d49a6d87f254e720469.jpg |
+| http://www.pks.or.id/contentAsset/resize-image/775893de-7dcf-41bf-b629-5258402ba439/image/?byInode=true&w=250 |
+| http://pksjateng.or.id/foto/e88753e4b3d6132748e78f22f4fa58ce.jpg |
+| http://pksjateng.or.id/foto/604d004f88eee7ae578560de31f904a5.jpg |
+| http://pks.or.id/contentAsset/resize-image/11c018fa-222e-4a63-be19-17f5ad753d65/image/?byInode=true&w=250 |
+| http://pks.or.id/contentAsset/resize-image/c15cd7dd-e1cb-4ef2-bd68-cd27e9b2b135/image/?byInode=true&w=250 |
+| http://pksjateng.or.id/foto/b28f55e818217df4a92df12d1263aaa2.jpg |
+| http://pks.or.id/contentAsset/resize-image/230af549-411b-4adc-a513-b34eed5c416f/image/?byInode=true&w=250 |
+| http://pksjateng.or.id/foto/ee3b301b2078f1c760ff3d0434c3a4fe.jpg |
+| http://suaramerdeka.com/foto_aktual/8a00a8aa9c716f70ce5590a6b4eb8bfb.jpg |
+| http://www.timlo.net/wp-content/uploads/2014/04/belum-sebulan-diresmikan-jalan-tol-semarang-solo-ambles.jpg |

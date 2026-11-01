@@ -1,0 +1,9 @@
+{{- /* Input: satu item menu. Output: alamat tujuan (kategori dicari otomatis, jadi tidak patah bila gaya alamat berubah). */ -}}
+{{- $it := . -}}
+{{- $u := "#" -}}
+{{- if $it.kategori }}
+  {{- with site.GetPage (printf "/categories/%s" (urlize $it.kategori)) }}{{ $u = .RelPermalink }}{{ end -}}
+{{- else if $it.url }}
+  {{- if hasPrefix $it.url "/" }}{{ $u = $it.url | relURL }}{{ else }}{{ $u = $it.url }}{{ end -}}
+{{- end -}}
+{{- return $u -}}

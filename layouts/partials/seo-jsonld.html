@@ -1,0 +1,26 @@
+{{- /* Data terstruktur (JSON-LD) untuk mesin pencari */ -}}
+{{- $logo := "images/logo-pks.png" | absURL -}}
+{{- $home := site.Home.Permalink -}}
+{{- $idn := partialCached "func/id.html" "x" "id" -}}
+{{- if .IsHome }}
+  {{- $same := slice -}}
+  {{- range $idn.social }}{{ $same = $same | append .url }}{{ end -}}
+  {{- $org := dict "@context" "https://schema.org" "@type" "Organization" "name" $idn.nama "url" $home "logo" $logo "sameAs" $same -}}
+<script type="application/ld+json">{{ $org | jsonify | safeJS }}</script>
+{{- else if and .IsPage (eq .Section "posts") }}
+  {{- $cat := "" -}}{{- $catURL := "" -}}
+  {{- with .GetTerms "categories" }}{{ with index . 0 }}{{ $cat = .LinkTitle }}{{ $catURL = .Permalink }}{{ end }}{{ end -}}
+  {{- $desc := .Description -}}{{- if not $desc }}{{ $desc = .Summary | plainify | truncate 160 }}{{ end -}}
+  {{- $art := dict "@context" "https://schema.org" "@type" "NewsArticle" "headline" (.Title | truncate 110) "description" $desc "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00") "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00") "image" (slice (partial "func/thumb.html" . | absURL)) "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink) "author" (dict "@type" "Organization" "name" $idn.nama) "publisher" (dict "@type" "Organization" "name" $idn.nama "logo" (dict "@type" "ImageObject" "url" $logo)) -}}
+  {{- if $cat }}{{ $art = merge $art (dict "articleSection" $cat) }}{{ end -}}
+  {{- $items := slice (dict "@type" "ListItem" "position" 1 "name" "Beranda" "item" $home) -}}
+  {{- if $cat }}{{ $items = $items | append (dict "@type" "ListItem" "position" 2 "name" $cat "item" $catURL) }}{{ end -}}
+  {{- $items = $items | append (dict "@type" "ListItem" "position" (add (len $items) 1) "name" .Title "item" .Permalink) -}}
+  {{- $bc := dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $items -}}
+<script type="application/ld+json">{{ $art | jsonify | safeJS }}</script>
+<script type="application/ld+json">{{ $bc | jsonify | safeJS }}</script>
+{{- else if and .IsPage (not .IsHome) (ne .Kind "404") }}
+  {{- $items := slice (dict "@type" "ListItem" "position" 1 "name" "Beranda" "item" $home) (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink) -}}
+  {{- $bc := dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $items -}}
+<script type="application/ld+json">{{ $bc | jsonify | safeJS }}</script>
+{{- end }}

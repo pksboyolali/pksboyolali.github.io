@@ -1,0 +1,9 @@
+<form role="search" method="get" action="{{ with site.GetPage "/cari" }}{{ .RelPermalink }}{{ else }}{{ "cari/" | relURL }}{{ end }}" class="relative flex flex-row items-center w-full max-w-2xl bg-white border border-gray-400 rounded-full px-4 md:px-8 gap-1 mt-6">
+  <input class="w-full text-pks-black text-base py-2 md:py-4 focus:outline-none" type="text" name="q" autocomplete="off" placeholder="Cari berita, tokoh, atau topik" aria-label="Kata kunci pencarian">
+  <button type="submit" class="cursor-pointer" aria-label="Cari">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M21 21L16.66 16.66" stroke="#FD5000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#FD5000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+</form>

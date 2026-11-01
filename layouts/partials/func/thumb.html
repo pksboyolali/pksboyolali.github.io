@@ -1,0 +1,11 @@
+{{- /* Mengembalikan URL gambar sampul sebuah halaman: front matter "image" -> gambar pertama di isi -> gambar bawaan */ -}}
+{{- $p := . -}}
+{{- $img := "" -}}
+{{- with $p.Params.image }}{{ $img = . }}{{ else }}
+  {{- if $p.IsPage }}
+    {{- $mm := findRESubmatch `<img[^>]+src=["']([^"']+)["']` $p.Content 1 -}}
+    {{- if $mm }}{{ $img = index (index $mm 0) 1 }}{{ end -}}
+  {{- end }}
+{{- end -}}
+{{- if not $img }}{{ $img = "/images/thumbnail-default.png" }}{{ end -}}
+{{- return $img -}}

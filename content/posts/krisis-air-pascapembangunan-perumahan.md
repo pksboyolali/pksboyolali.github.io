@@ -1,0 +1,11 @@
+---
+title: "Krisis Air Pascapembangunan Perumahan, Warga Bertindak Mandiri"
+date: 2025-04-11T06:46:00+07:00
+url: "/2025/04/krisis-air-pascapembangunan-perumahan.html"
+categories: ["Fraksi PKS", "Oase"]
+tags: []
+image: "/images/uploads/2025/04/user-g029e3wx2ave9iywe951zspuuze2-blogpost-35b836ec.jpeg"
+draft: false
+---
+
+<p><img src="/images/uploads/2025/04/user-g029e3wx2ave9iywe951zspuuze2-blogpost-35b836ec.jpeg" width="400" onclick="window.location.href=&quot;https://firebasestorage.googleapis.com/v0/b/blogger-blogspot-e0ea5.appspot.com/o/user%2Fg029e3wX2AVe9iYwE951zSpUuZE2%2Fblogpost%2F1745816162924.jpeg?alt=media&amp;token=8e7ccc08-4c10-4f7b-9aa3-0253b4df5ea6&quot;"></p><p>Boyolali -- Anggota DPRD Boyolali dari Fraksi PKS, Ali Hufroni, yang berasal dari Daerah Pemilihan 5 (Ngemplak, Sambi, Sawit, Banyudono), melakukan kunjungan lapangan ke warga Desa Ngargorejo, Kecamatan Ngemplak (10/04). Kunjungan ini dilakukan untuk menyerap aspirasi masyarakat dan meninjau langsung kondisi yang dihadapi warga.</p><p>Dalam kunjungan tersebut, Ali Hufroni bertemu dengan dua Ketua RT setempat, Sutimin dan Munir. Ia menyampaikan bahwa warga mengeluhkan sumber air dari sumur yang selama ini digunakan tidak lagi mengalir akibat dampak pembangunan perumahan di sekitar wilayah mereka.</p><p><img src="/images/uploads/2025/04/user-g029e3wx2ave9iywe951zspuuze2-blogpost-a75d7f3e.jpeg" width="400" onclick="window.location.href=&quot;https://firebasestorage.googleapis.com/v0/b/blogger-blogspot-e0ea5.appspot.com/o/user%2Fg029e3wX2AVe9iYwE951zSpUuZE2%2Fblogpost%2F1745816162930.jpeg?alt=media&amp;token=b3d4755e-2638-4fcf-a434-f0a577be4b96&quot;"></p><p>Sebagai respons atas kondisi tersebut, warga berinisiatif membangun sumur dalam secara swadaya, tanpa bantuan dari pihak ketiga. Air dari sumur tersebut kemudian dialirkan ke rumah-rumah warga yang terdampak kekeringan. Sistem pengelolaannya dilakukan melalui mekanisme pembayaran seperti PDAM, dan dikelola oleh pihak mushola setempat.</p><p>Untuk mendukung sarana distribusi air tersebut, warga menyampaikan aspirasi kepada Ali Hufroni agar kebutuhan seperti genset dan tandon tambahan dapat dibantu pengadaannya. Hal ini bertujuan agar distribusi air bersih kepada warga yang kekurangan pasokan dapat berjalan lancar dan berkelanjutan. (nh/ta)</p>

@@ -1,0 +1,11 @@
+---
+title: "Sambut Ramadhan 1442 H, DPC PKS Teras Bagikan 100 Paket Kurma Gratis"
+date: 2021-04-12T10:48:00+07:00
+url: "/2021/04/sambut-ramadhan-1442-h-dpc-pks-teras-bagikan-100-paket-kurma-gratis.html"
+categories: []
+tags: []
+image: "/images/uploads/2021/04/img-20210412-wa0019-e5ec55a3.jpg"
+draft: false
+---
+
+<div class="separator"><a href="/images/uploads/2021/04/img-20210412-wa0019-e5ec55a3.jpg" imageanchor="1"><img border="0" data-original-height="960" data-original-width="1280" height="480" src="/images/uploads/2021/04/img-20210412-wa0019-e5ec55a3.jpg" width="640" /></a></div><p>DPC PKS Kecamatan Teras mengadakan kegiatan Tarhib Ramadhan 1442 H&nbsp;pada hari Ahad, 11 April 2021. Kegiatan yang dilaksanakan antara lain pemasangan&nbsp;spanduk Ramadhan, pembagian jadwal imsyakiyah, dan berbagi kurma gratis kepada masyarakat Desa Randusari dan sekitarnya.</p><p>Dwi Marsudi, ketua DPC PKS Kecamatan Teras, menyampaikan bahwa kegiatan ini dilaksanakan sebagai bentuk pelayanan PKS kepada masyarakat Teras, sekaligus untuk mengenalkan logo PKS yang baru.&nbsp;</p><p>Agenda ini turut dihadiri oleh para pengurus DPC PKS Teras yaitu Ibu Jaini Kabid Perempuan dan Ketahanan Keluarga (BPKK); Kabid Kaderisasi, M. Aris Widodo; Bendahara DPC, Sunardi; Sekretaris DPC, Mulyanto; serta sesepuh DPC PKS Teras, Bpk. Rejo.&nbsp;</p><div class="separator"><a href="/images/uploads/2021/04/img-20210412-wa0025-f53cdfe5.jpg" imageanchor="1"><img border="0" data-original-height="960" data-original-width="1280" height="480" src="/images/uploads/2021/04/img-20210412-wa0025-f53cdfe5.jpg" width="640" /></a></div><p>Tarhib Ramadhan ini adalah bentuk kegiatan DPC PKS Teras untuk menyambut kedatangan Bulan Suci Ramadhan 1442 H.&nbsp;</p><p>Dilaksanakan sejak pukul 15.30 wib dengan diawali pemasangan papan Sekretariat DPC PKS Teras berlogo baru, pemasangan spanduk ramadhan, kemudian pembagian jadwal imsyakiyah dan berbagi kurma gratis sebanyak 100 paket yang dibagikan kepada masyarakat yang melalui jalan di depan sekretariat DPC PKS Teras.&nbsp;</p><p>Masyarakat merasa senang dan berterima atas adanya kegiatan ini. Dalmo, warga Tegalsari RT 03 RW 04, Randusari, Teras, Boyolali menyampaikan, "Alhamdulillah, masih ada partai Islam yang sangat peduli dengan masyarakat. Hal ini bukti nyata Teks line PKS bahwa PKS Pelayanan Rakyat".</p>

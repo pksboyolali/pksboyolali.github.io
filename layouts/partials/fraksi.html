@@ -1,0 +1,36 @@
+{{- /* Blok halaman Profil Fraksi. Datanya di front matter content/pages/profil-fraksi.md */ -}}
+{{- with .Params.anggota }}
+<section class="fraksi">
+  <h2 class="fraksi-judul">Anggota Fraksi</h2>
+  <div class="fraksi-grid">
+    {{- range . }}
+    {{- $nama := .nama }}
+    <article class="fraksi-kartu">
+      {{- with .foto }}
+      <img class="fraksi-foto" src="{{ . | relURL }}" alt="Foto {{ $nama }}" loading="lazy">
+      {{- else }}
+      <div class="fraksi-foto fraksi-foto--kosong">
+        <img src="{{ "images/logo-pks.png" | relURL }}" alt="Logo PKS" loading="lazy">
+      </div>
+      {{- end }}
+      <div class="fraksi-isi">
+        <h3>{{ .nama }}</h3>
+        <p class="fraksi-jabatan">{{ .jabatan }}</p>
+        <dl>
+          <div><dt>Dapil</dt><dd>{{ .dapil }}</dd></div>
+          {{- with .kecamatan }}
+          <div><dt>Kecamatan</dt><dd class="fraksi-kec">{{ . }}</dd></div>
+          {{- end }}
+          <div><dt>Komisi</dt><dd>{{ .komisi | default "—" }}</dd></div>
+        </dl>
+      </div>
+    </article>
+    {{- end }}
+  </div>
+
+  <p class="fraksi-ajakan">
+    Punya aspirasi atau usulan untuk anggota fraksi? Sampaikan melalui halaman
+    <a href="{{ "aspirasi/" | relURL }}">Aspirasi</a>.
+  </p>
+</section>
+{{- end }}

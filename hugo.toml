@@ -1,0 +1,58 @@
+# =====================================================================
+#  DPD PKS Boyolali - konfigurasi situs (Hugo)
+#  Menu header: data/menu.yaml | identitas dan kontak: data/identitas.yaml (keduanya bisa diedit lewat admin).
+# =====================================================================
+baseURL = "https://boyolali.pks.id/"
+title = "DPD PKS Boyolali"
+locale = "id-ID"
+defaultContentLanguage = "id"
+timeZone = "Asia/Jakarta"
+enableRobotsTXT = true
+summaryLength = 40
+
+[pagination]
+  pagerSize = 12
+  path = "halaman"          # alamat halaman berikutnya: /kategori/seputar-pks/halaman/2/
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# Alamat artikel baru: /2026/10/judul-artikel/  (tanpa ekstensi).
+# Artikel lama memakai alamat aslinya lewat "url:" di front matter (berakhiran .html).
+[permalinks.page]
+  posts = "/:year/:month/:slug/"
+
+# Alamat kategori dan tag dalam bahasa Indonesia
+[permalinks.taxonomy]
+  categories = "/kategori/"
+  tags = "/tag/"
+[permalinks.term]
+  categories = "/kategori/:slug/"
+  tags = "/tag/:slug/"
+
+[markup.goldmark.renderer]
+  unsafe = true            # izinkan HTML di dalam artikel (embed YouTube, dll.)
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+# "Berita Terkait" di halaman artikel
+[related]
+  includeNewer = true
+  threshold = 50
+  toLower = true
+  [[related.indices]]
+    name = "categories"
+    weight = 100
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+
+# Identitas, kontak, media sosial, tombol bagikan, dan panjang alamat artikel ada di
+# data/identitas.yaml (bisa diedit lewat admin: Identitas situs).
+
+# Versi Hugo minimum. Bila Hugo di komputer lebih lama, akan muncul pesan yang jelas.
+[module]
+  [module.hugoVersion]
+    min = "0.169.0"

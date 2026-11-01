@@ -1,0 +1,11 @@
+---
+title: "Wahyono Salurkan 11.000 Bibit Kelapa"
+date: 2025-07-20T13:46:00+07:00
+url: "/2025/07/wahyono-salurkan-11000-bibit-kelapa.html"
+categories: ["Fraksi PKS", "Kiprah Kami", "Seputar Boyolali"]
+tags: []
+image: "/images/uploads/2025/07/user-g029e3wx2ave9iywe951zspuuze2-blogpost-2364c5f2.jpeg"
+draft: false
+---
+
+<p><img src="/images/uploads/2025/07/user-g029e3wx2ave9iywe951zspuuze2-blogpost-2364c5f2.jpeg" width="400" onclick="window.location.href=&quot;https://firebasestorage.googleapis.com/v0/b/blogger-blogspot-e0ea5.appspot.com/o/user%2Fg029e3wX2AVe9iYwE951zSpUuZE2%2Fblogpost%2F1753339657605.jpeg?alt=media&amp;token=419871f6-600a-4124-b385-c3aaaad15b73&quot;"></p><p>Boyolali, 16 Juli 2025 - Anggota DPRD Kabupaten Boyolali dari Fraksi Partai Keadilan Sejahtera (PKS) Daerah Pemilihan 3 (Wonosegoro, Wonosamudro, Juwangi, Karanggede, Kemusu), Bapak Wahyono, melaksanakan kegiatan penyerahan bantuan bibit kelapa kepada Gabungan Kelompok Tani (Gapoktan) "Rukun Tani" di Desa Kalinanas, Kecamatan Wonosamudro.</p><p>Sebanyak 11.000 batang bibit kelapa, diserahkan secara simbolis kepada perwakilan Gapoktan sebagai bentuk dukungan terhadap penguatan sektor perkebunan dan peningkatan ekonomi masyarakat desa. Bantuan ini merupakan hasil advokasi dari Anggota DPR RI, Bapak Abdul Kharis Almasyhari, yang saat ini menjabat sebagai Ketua Fraksi PKS dan anggota Komisi IV DPR RI yang membidangi sektor pertanian, kehutanan, dan kelautan.</p><p>Kegiatan ini turut dihadiri oleh pejabat terkait, yakni Kepala Bidang Perkebunan Dinas Pertanian Kabupaten Boyolali, Camat Wonosamudro, Kepala Desa Kalinanas, Pengurus dan anggota Gapoktan "Rukun Tani" Desa Kalinanas.</p><p>Pak Wahyono menyampaikan bahwa bantuan ini merupakan bentuk nyata dari komitmen PKS dalam mendukung ketahanan pangan dan pemberdayaan petani di daerah. “Kami berharap bantuan ini dapat dimanfaatkan sebaik mungkin untuk meningkatkan produksi perkebunan rakyat dan mendorong kemandirian ekonomi petani,” ujarnya.</p><p>Fraksi PKS terus mendorong sinergi antara pemerintah pusat, daerah, dan masyarakat dalam program-program pemberdayaan yang berkelanjutan. Harapannya, Desa Kalinanas dan wilayah sekitarnya dapat menjadi contoh sukses pengembangan komoditas kelapa yang mampu meningkatkan kesejahteraan petani.(fr/sf)</p>

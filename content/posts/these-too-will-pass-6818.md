@@ -1,0 +1,11 @@
+---
+title: "These too, will pass"
+date: 2012-01-01T10:08:00+07:00
+url: "/2011/12/these-too-will-pass_6818.html"
+categories: ["Oase"]
+tags: []
+image: "/images/uploads/2012/01/ramadan-by-design-q8z-20fd909b.jpg"
+draft: false
+---
+
+<div class="separator"><a href="/images/uploads/2012/01/ramadan-by-design-q8z-20fd909b.jpg" imageanchor="1"><img border="0" src="/images/uploads/2012/01/ramadan-by-design-q8z-20fd909b.jpg" /></a></div>Ada seorang raja yang terkenal dengan kebijaksanaannya. Pada suatu hari, Sang Raja meminta kepada tukang emasnya yang sudah tua renta utk menuliskan sesuatu di dalam cincinnya.<br /><br />Raja berpesan, "Tuliskanlah sesuatu yang bisa kamu simpulkan dari seluruh pengalaman &amp; perjalanan hidupmu, supaya itupun bisa menjadi pelajaran utk hidup saya".<br /><br />Berbulan2 si tukang emas yg tua itu membuat cincinnya, lalu lebih sulitnya menuliskan apa yg penting di cincin emas yg kecil itu. Akhirnya setelah berdoa &amp; berpuasa, si tukang emas itupun menyerahkan cincinnya pada Sang Raja. Dan dengan tersenyum, Sang Raja membaca tulisan kecil di cincin itu. Bunyinya, "DAN YANG INIPUN AKAN BERLALU".<br /><br />Awalnya Sang Raja tidak terlalu paham dengan apa yg tertulis di sana. Tapi, suatu ketika, tatkala menghadapi persoalan kerajaan yg pelik, akhirnya Ia membaca tulisan di cincin itu &amp; Ia pun menjadi lebih tenang, “Dan Inipun akan berlalu!”. Dan tatkala Ia sedang bersenang2, Ia pun tak sengaja membaca tulisan di cincin itu, lantas Ia menjadi rendah hati kembali.<br /><br />Ketika Anda lagi punya masalah besar ataupun sedang lagi kondisi terlalu gembira, ingatlah kalimat itu, "Dan inipun akan berlalu" (These too, will pass).<br /><br />Kalimat ini, kalau direnungkan dengan bijak akan mengantarkan diri kita pada keseimbangan hidup. Tidak ada satupun yang langgeng. Jadi, ketika Anda punya masalah, janganlah terlalu bersedih. Tatkala Anda lagi senang, jangan terlalu kelewat senang.<br /><br />Ingatlah....apapun yg Anda hadapi saat ini, semuanya akan berlalu.<br /><br />كُلُّ مَنْ عَلَيْهَا فَان وَيَبْقَى وَجْهُ رَبِّكَ ذُوالْجَلٰلِ وَالْإِكْرَامِ<br /><br />“Semua yang ada di bumi itu akan sirna. Dan tetap kekal Dzat Tuhanmu yang mempunyai kebesaran dan kemuliaan.” (55:26-27)<br /><br />*)http://www.facebook.com/note.php?note_id=269881769705300

@@ -1,0 +1,51 @@
+items:
+  - nama: Beranda
+    url: /
+  - nama: Berita
+    url: ''
+    anak:
+      - nama: Semua Berita
+        url: /berita/
+      - nama: Kiprah Kami
+        url: ''
+        kategori: Kiprah Kami
+      - nama: Pilkada
+        url: ''
+        kategori: Pilkada
+      - nama: Seputar Boyolali
+        url: ''
+        kategori: Seputar Boyolali
+      - nama: Seputar PKS
+        url: ''
+        kategori: Seputar PKS
+      - nama: Topik Pilihan
+        kategori: Topik Pilihan
+  - nama: Fraksi
+    url: ''
+    anak:
+      - nama: Kabar Fraksi
+        url: ''
+        kategori: Fraksi PKS
+      - nama: Aspirasi
+        url: /aspirasi/
+      - nama: Profil Fraksi
+        url: /profil-fraksi/
+  - nama: Inspirasi
+    url: ''
+    anak:
+      - nama: Semua Inspirasi
+        url: /inspirasi/
+      - nama: Harokah
+        kategori: Harokah
+      - nama: Inspirasi
+        kategori: Inspirasi
+      - nama: Oase
+        kategori: Oase
+      - nama: Ragam
+        kategori: Ragam
+  - nama: Lainnya
+    anak:
+      - nama: Gabung PKS
+        url: /gabung/
+      - nama: Profil Pengurus
+        url: /profil-pengurus/

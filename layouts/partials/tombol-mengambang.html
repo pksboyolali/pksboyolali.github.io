@@ -1,0 +1,19 @@
+{{- /*
+  TOMBOL MENGAMBANG DI PONSEL (hanya di halaman artikel).
+  Saat ini fungsinya: membuka pilihan bagikan (WhatsApp, Telegram, X, Facebook, Email, salin tautan).
+  Untuk mengganti fungsi lain (mis. menuju halaman Aspirasi): ganti isi di bawah dengan tombol/tautan baru.
+  Mematikan tanpa mengubah kode: hugo.toml > [params.bagikan] > mengambang_ponsel = false
+  Perilaku buka-tutup pilihan bagikan ada di static/assets/newscontent-CZCGTSkc.js
+*/ -}}
+    <div class="mobile-share flex flex-col gap-2 md:hidden z-10 fixed bottom-4 right-4">
+      <div class="hidden-share hidden animate-fade-in-up pb-4">
+        {{ partial "social-sharing.html" (dict "type" "vertical" "title" .Title "url" .Permalink) }}
+      </div>
+      <div class="trigger-share flex flex-col items-center gap-1">
+        <div class="bg-pks-orange relative p-4 rounded-full">
+          <svg class="fill-pks-white w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M384.5 24l0 72-64 0c-79.5 0-144 64.5-144 144 0 93.4 82.8 134.8 100.6 142.6 2.2 1 4.6 1.4 7.1 1.4l2.5 0c9.8 0 17.8-8 17.8-17.8 0-8.3-5.9-15.5-12.8-20.3-8.9-6.2-19.2-18.2-19.2-40.5 0-45 36.5-81.5 81.5-81.5l30.5 0 0 72c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2l136-136c9.4-9.4 9.4-24.6 0-33.9L425.5 7c-6.9-6.9-17.2-8.9-26.2-5.2S384.5 14.3 384.5 24zm-272 72c-44.2 0-80 35.8-80 80l0 256c0 44.2 35.8 80 80 80l256 0c44.2 0 80-35.8 80-80l0-32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 32c0 8.8-7.2 16-16 16l-256 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l16 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-16 0z"/></svg>
+          <span class="absolute -z-1 block top-1/2 left-1/2 w-10 h-10 -translate-x-1/2 -translate-y-1/2 bg-pks-blue rounded-full animate-ping"></span>
+        </div>
+        <span class="text-xs bg-pks-white py-0.5 px-2 rounded-full text-pks-blue font-bold">BAGIKAN</span>
+      </div>
+    </div>

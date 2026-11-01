@@ -1,0 +1,13 @@
+# Dipakai bila situs di Cloudflare Pages atau Netlify (GitHub Pages mengabaikan file ini).
+# Mengalihkan alamat label Blogger lama ke kategori baru (301).
+/search/label/FRAKSI%20PKS /kategori/fraksi-pks/ 301
+/search/label/HAROKAH /kategori/harokah/ 301
+/search/label/INSPIRASI /kategori/inspirasi/ 301
+/search/label/KIPRAH%20KAMI /kategori/kiprah-kami/ 301
+/search/label/OASE /kategori/oase/ 301
+/search/label/PILKADA /kategori/pilkada/ 301
+/search/label/RAGAM /kategori/ragam/ 301
+/search/label/SEPUTAR%20BOYOLALI /kategori/seputar-boyolali/ 301
+/search/label/SEPUTAR%20PKS /kategori/seputar-pks/ 301
+/search/label/TOPIK%20PILIHAN /kategori/topik-pilihan/ 301
+/feeds/posts/default /index.xml 301

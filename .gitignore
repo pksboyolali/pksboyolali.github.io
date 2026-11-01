@@ -1,0 +1,6 @@
+public/
+resources/
+.hugo_build.lock
+__pycache__/
+# Hugo untuk pratinjau lokal di Windows (tidak perlu ikut ke GitHub)
+_tools/

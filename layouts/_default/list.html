@@ -1,0 +1,33 @@
+{{- /* Daftar artikel: halaman kategori, tag, arsip, dan halaman gabungan kategori. */ -}}
+{{ define "main" }}
+<header class="mb-8">
+  <h1 class="items-center gap-4 text-3xl font-semibold text-pks-orange">
+    {{ if eq .Kind "term" }}<span class="text-black! font-semibold">{{ .Title }}</span>{{ else }}{{ .Title }}{{ end }}
+  </h1>
+</header>
+
+{{ if eq .Kind "taxonomy" }}
+  {{ $terms := .Data.Terms.ByCount }}
+  {{ if eq .Data.Plural "tags" }}
+    {{ with $terms }}
+    {{ $max := float (index . 0).Count }}
+    <div class="tag-cloud">
+      {{ range . }}{{ $r := div (float .Count) $max }}
+      <a class="tc tc-{{ if ge $r 0.75 }}4{{ else if ge $r 0.5 }}3{{ else if ge $r 0.25 }}2{{ else }}1{{ end }}" href="{{ .Page.RelPermalink }}">#{{ .Page.Title }}<small>({{ .Count }})</small></a>
+      {{ end }}
+    </div>
+    {{ else }}{{ partial "alert.html" (dict "text" "Belum ada tag.") }}{{ end }}
+  {{ else }}
+    <ul class="flex flex-row flex-wrap gap-3">
+      {{ range $terms }}<li><a href="{{ .Page.RelPermalink }}" class="cat-pill">{{ .Page.Title }}<span class="text-pks-black-300">{{ .Count }}</span></a></li>{{ end }}
+    </ul>
+  {{ end }}
+{{ else }}
+  {{ $pager := .Paginate (.Pages.ByPublishDate.Reverse) }}
+  {{ range $pager.Pages }}{{ partial "list-item.html" . }}{{ else }}
+    {{ partial "alert.html" (dict "text" "Maaf, tidak ada berita yang ditemukan.") }}
+    {{ partial "search-form.html" . }}
+  {{ end }}
+  {{ partial "pagination.html" $pager }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,42 @@
+{{- /* Kerangka semua halaman: <head>, header, kolom isi + sidebar, footer.
+     Sidebar tampil di semua halaman kecuali beranda dan 404 (mengikuti tema WordPress). */ -}}
+<!doctype html>
+<html lang="id">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+
+  <body{{ if .IsHome }} class="home"{{ end }}>
+    <div id="zoom-container" class="fixed top-0 left-0 h-dvh w-full z-50 cursor-zoom-out"></div>
+
+    <div id="app">
+      <a class="sr-only focus:not-sr-only" href="#main">Lewati ke konten</a>
+
+      {{ partial "header.html" . }}
+
+      {{/* Sidebar tampil di semua halaman kecuali beranda dan 404 (seperti tema WordPress) */}}
+      {{ $side := not (or .IsHome (eq .Kind "404")) }}
+      <main id="main">
+        <div class="container max-w-7xl mx-auto px-4 py-4 md:py-10{{ if $side }} grid grid-cols-1 md:grid-cols-12 gap-12{{ end }}">
+          <section class="content{{ if $side }} md:col-span-7{{ end }}">
+            {{ block "main" . }}{{ end }}
+          </section>
+          {{ if $side }}
+          <aside class="sidebar md:col-span-5">
+            {{ partial "sidebar.html" . }}
+          </aside>
+          {{ end }}
+        </div>
+      </main>
+
+      {{ partial "footer.html" . }}
+    </div>
+
+    {{ if .IsPage }}<script src="{{ "assets/newscontent-CZCGTSkc.js" | relURL }}"></script>
+    {{/* Zoom gambar: hanya dimuat bila halaman memang punya gambar */}}
+    {{ if or (and .Content (in .Content "<img")) .Params.image }}
+    <script src="{{ "assets/vendor/medium-zoom.min.js" | relURL }}" defer></script>
+    <script src="{{ "assets/zoom.js" | relURL }}" defer></script>
+    {{ end }}{{ end }}
+  </body>
+</html>

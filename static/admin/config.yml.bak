@@ -1,0 +1,655 @@
+# =====================================================================
+#  Admin CMS (Sveltia CMS). GANTI "repo" dengan USERNAME/NAMA-REPO milik Anda.
+#  Masuk di https://ALAMAT-SITUS/admin/ memakai token GitHub (lihat README).
+#  Urutan menu samping admin mengikuti urutan "collections" di bawah.
+# =====================================================================
+backend:
+  name: github
+  repo: GANTI-USERNAME/GANTI-NAMA-REPO
+  branch: main
+site_url: https://boyolali.pks.id
+display_url: https://boyolali.pks.id
+media_folder: static/images/uploads
+public_folder: /images/uploads
+locale: id
+collections:
+- name: identitas
+  label: Identitas situs
+  files:
+  - name: identitas
+    label: Identitas & pengaturan dasar
+    file: data/identitas.yaml
+    fields:
+    - label: Nama situs
+      name: nama_situs
+      widget: string
+      hint: 'Contoh: DPD PKS Boyolali'
+    - label: Deskripsi singkat situs
+      name: deskripsi
+      widget: text
+      hint: Tampil di hasil pencarian Google dan saat tautan dibagikan
+    - label: Jenis kepengurusan
+      name: jenis
+      widget: select
+      options:
+      - label: Pusat
+        value: pusat
+      - label: Provinsi (DPW)
+        value: provinsi
+      - label: Kabupaten (DPD)
+        value: kabupaten
+      - label: Kota (DPD)
+        value: kota
+    - label: Nama wilayah
+      name: wilayah
+      widget: string
+      hint: 'Tanpa kata Kabupaten/Kota/Provinsi. Contoh: Boyolali'
+    - label: Judul header baris 1 (opsional, menimpa otomatis)
+      name: judul_baris_1
+      widget: string
+      required: false
+    - label: Judul header baris 2 (opsional, menimpa otomatis)
+      name: judul_baris_2
+      widget: string
+      required: false
+    - label: Judul header baris 3 (opsional, menimpa otomatis)
+      name: judul_baris_3
+      widget: string
+      required: false
+    - label: Kontak di footer
+      name: kontak
+      widget: object
+      fields:
+      - label: Nama kantor
+        name: kantor
+        widget: string
+        required: false
+      - label: Alamat
+        name: alamat
+        widget: string
+        required: false
+      - label: Telepon
+        name: telepon
+        widget: string
+        required: false
+      - label: Email
+        name: email
+        widget: string
+        required: false
+      - label: Tautan peta (Google Maps)
+        name: peta
+        widget: string
+        required: false
+    - label: Tautan "Website ini bagian dari..." (kosongkan nama untuk menyembunyikan)
+      name: induk
+      widget: object
+      required: false
+      fields:
+      - label: Nama
+        name: nama
+        widget: string
+        required: false
+      - label: Alamat
+        name: url
+        widget: string
+        required: false
+    - label: Teks hak cipta di footer (kosongkan untuk otomatis)
+      name: teks_hak_cipta
+      widget: string
+      required: false
+    - label: Teks ajakan media sosial di footer (kosongkan untuk otomatis)
+      name: teks_sosial
+      widget: string
+      required: false
+    - label: Media sosial (urutan = urutan tampil)
+      name: media_sosial
+      widget: list
+      required: false
+      summary: '{{fields.nama}}'
+      fields:
+      - label: Platform
+        name: nama
+        widget: select
+        options:
+        - Youtube
+        - Instagram
+        - Tiktok
+        - X alias Twitter
+        - Facebook
+        - Telegram
+        - WhatsApp
+        - Threads
+      - label: Alamat akun
+        name: url
+        widget: string
+    - label: Tombol bagikan
+      name: bagikan
+      widget: object
+      fields:
+      - label: Di atas artikel (layar lebar)
+        name: atas_artikel
+        widget: boolean
+        default: true
+      - label: Di atas halaman statis
+        name: atas_halaman
+        widget: boolean
+        default: false
+      - label: Di bawah artikel dan halaman statis
+        name: bawah
+        widget: boolean
+        default: true
+      - label: Tombol mengambang di ponsel (artikel)
+        name: mengambang_ponsel
+        widget: boolean
+        default: true
+    - label: Alamat artikel baru
+      name: alamat_artikel
+      widget: object
+      summary: maks {{fields.maks_kata}} kata
+      fields:
+      - label: Jumlah kata paling banyak
+        name: maks_kata
+        widget: number
+        value_type: int
+        min: 2
+        max: 20
+        default: 8
+      - label: Panjang paling banyak (huruf)
+        name: maks_huruf
+        widget: number
+        value_type: int
+        min: 20
+        max: 150
+        default: 70
+- name: header_menu
+  label: Header & Menu
+  files:
+  - name: menu
+    label: Menu header
+    file: data/menu.yaml
+    fields:
+    - label: Menu utama (urutan = urutan tampil)
+      name: items
+      widget: list
+      summary: '{{fields.nama}}'
+      fields:
+      - label: Nama
+        name: nama
+        widget: string
+      - label: Alamat tujuan (isi ini ATAU kategori)
+        name: url
+        widget: string
+        required: false
+      - label: Kategori (pilih bila menu mengarah ke kategori)
+        name: kategori
+        widget: select
+        options: &id001
+        - Fraksi PKS
+        - Harokah
+        - Inspirasi
+        - Kiprah Kami
+        - Oase
+        - Pilkada
+        - Ragam
+        - Seputar Boyolali
+        - Seputar PKS
+        - Topik Pilihan
+        required: false
+      - label: Submenu (kosongkan bila bukan dropdown)
+        name: anak
+        widget: list
+        required: false
+        summary: '{{fields.nama}}'
+        fields:
+        - label: Nama
+          name: nama
+          widget: string
+        - label: Alamat tujuan (isi ini ATAU kategori)
+          name: url
+          widget: string
+          required: false
+        - label: Kategori (pilih bila menu mengarah ke kategori)
+          name: kategori
+          widget: select
+          options:
+          - Fraksi PKS
+          - Harokah
+          - Inspirasi
+          - Kiprah Kami
+          - Oase
+          - Pilkada
+          - Ragam
+          - Seputar Boyolali
+          - Seputar PKS
+          - Topik Pilihan
+          required: false
+- name: beranda
+  label: Beranda & tata letak
+  files:
+  - name: beranda
+    label: Banner & susunan beranda
+    file: data/beranda.yaml
+    fields:
+    - label: Banner slider
+      name: banner
+      widget: list
+      required: false
+      summary: '{{fields.alt}}'
+      fields:
+      - label: Gambar
+        name: gambar
+        widget: image
+      - label: Tautan (opsional)
+        name: link
+        widget: string
+        required: false
+      - label: Teks alternatif
+        name: alt
+        widget: string
+        required: false
+    - label: Susunan beranda (dari atas ke bawah)
+      name: susunan
+      widget: list
+      typeKey: tipe
+      types:
+      - label: Sorotan Berita (1 besar + 3 kecil)
+        name: sorotan_berita
+        widget: object
+        fields:
+        - label: Kategori
+          name: kategori
+          widget: select
+          options:
+          - label: Fraksi PKS
+            value: fraksi-pks
+          - label: Harokah
+            value: harokah
+          - label: Inspirasi
+            value: inspirasi
+          - label: Kiprah Kami
+            value: kiprah-kami
+          - label: Oase
+            value: oase
+          - label: Pilkada
+            value: pilkada
+          - label: Ragam
+            value: ragam
+          - label: Seputar Boyolali
+            value: seputar-boyolali
+          - label: Seputar PKS
+            value: seputar-pks
+          - label: Topik Pilihan
+            value: topik-pilihan
+        - label: Ikon (opsional)
+          name: ikon
+          widget: image
+          required: false
+      - label: 2 Kolom Berita
+        name: dua_kolom_berita
+        widget: object
+        fields:
+        - label: Kolom 1
+          name: kolom_1
+          widget: object
+          fields:
+          - label: Kategori
+            name: kategori
+            widget: select
+            options:
+            - label: Fraksi PKS
+              value: fraksi-pks
+            - label: Harokah
+              value: harokah
+            - label: Inspirasi
+              value: inspirasi
+            - label: Kiprah Kami
+              value: kiprah-kami
+            - label: Oase
+              value: oase
+            - label: Pilkada
+              value: pilkada
+            - label: Ragam
+              value: ragam
+            - label: Seputar Boyolali
+              value: seputar-boyolali
+            - label: Seputar PKS
+              value: seputar-pks
+            - label: Topik Pilihan
+              value: topik-pilihan
+          - label: Ikon (opsional)
+            name: ikon
+            widget: image
+            required: false
+        - label: Kolom 2
+          name: kolom_2
+          widget: object
+          fields:
+          - label: Kategori
+            name: kategori
+            widget: select
+            options:
+            - label: Fraksi PKS
+              value: fraksi-pks
+            - label: Harokah
+              value: harokah
+            - label: Inspirasi
+              value: inspirasi
+            - label: Kiprah Kami
+              value: kiprah-kami
+            - label: Oase
+              value: oase
+            - label: Pilkada
+              value: pilkada
+            - label: Ragam
+              value: ragam
+            - label: Seputar Boyolali
+              value: seputar-boyolali
+            - label: Seputar PKS
+              value: seputar-pks
+            - label: Topik Pilihan
+              value: topik-pilihan
+          - label: Ikon (opsional)
+            name: ikon
+            widget: image
+            required: false
+      - label: 3 Kolom Berita
+        name: tiga_kolom_berita
+        widget: object
+        fields:
+        - label: Kolom 1
+          name: kolom_1
+          widget: object
+          fields:
+          - label: Kategori
+            name: kategori
+            widget: select
+            options:
+            - label: Fraksi PKS
+              value: fraksi-pks
+            - label: Harokah
+              value: harokah
+            - label: Inspirasi
+              value: inspirasi
+            - label: Kiprah Kami
+              value: kiprah-kami
+            - label: Oase
+              value: oase
+            - label: Pilkada
+              value: pilkada
+            - label: Ragam
+              value: ragam
+            - label: Seputar Boyolali
+              value: seputar-boyolali
+            - label: Seputar PKS
+              value: seputar-pks
+            - label: Topik Pilihan
+              value: topik-pilihan
+          - label: Ikon (opsional)
+            name: ikon
+            widget: image
+            required: false
+        - label: Kolom 2
+          name: kolom_2
+          widget: object
+          fields:
+          - label: Kategori
+            name: kategori
+            widget: select
+            options:
+            - label: Fraksi PKS
+              value: fraksi-pks
+            - label: Harokah
+              value: harokah
+            - label: Inspirasi
+              value: inspirasi
+            - label: Kiprah Kami
+              value: kiprah-kami
+            - label: Oase
+              value: oase
+            - label: Pilkada
+              value: pilkada
+            - label: Ragam
+              value: ragam
+            - label: Seputar Boyolali
+              value: seputar-boyolali
+            - label: Seputar PKS
+              value: seputar-pks
+            - label: Topik Pilihan
+              value: topik-pilihan
+          - label: Ikon (opsional)
+            name: ikon
+            widget: image
+            required: false
+        - label: Kolom 3
+          name: kolom_3
+          widget: object
+          fields:
+          - label: Kategori
+            name: kategori
+            widget: select
+            options:
+            - label: Fraksi PKS
+              value: fraksi-pks
+            - label: Harokah
+              value: harokah
+            - label: Inspirasi
+              value: inspirasi
+            - label: Kiprah Kami
+              value: kiprah-kami
+            - label: Oase
+              value: oase
+            - label: Pilkada
+              value: pilkada
+            - label: Ragam
+              value: ragam
+            - label: Seputar Boyolali
+              value: seputar-boyolali
+            - label: Seputar PKS
+              value: seputar-pks
+            - label: Topik Pilihan
+              value: topik-pilihan
+          - label: Ikon (opsional)
+            name: ikon
+            widget: image
+            required: false
+      - label: Gambar Lebar
+        name: gambar_lebar
+        widget: object
+        fields:
+        - label: Gambar
+          name: gambar
+          widget: image
+        - label: Tautan (opsional)
+          name: link
+          widget: string
+          required: false
+        - label: Teks alternatif
+          name: alt
+          widget: string
+          required: false
+      - label: 2 Kolom Gambar
+        name: dua_kolom_gambar
+        widget: object
+        fields:
+        - label: Gambar
+          name: gambar
+          widget: list
+          summary: '{{fields.alt}}'
+          fields:
+          - label: Gambar
+            name: gambar
+            widget: image
+          - label: Tautan (opsional)
+            name: link
+            widget: string
+            required: false
+          - label: Teks alternatif
+            name: alt
+            widget: string
+            required: false
+      - label: 3 Kolom Gambar
+        name: tiga_kolom_gambar
+        widget: object
+        fields:
+        - label: Gambar
+          name: gambar
+          widget: list
+          summary: '{{fields.alt}}'
+          fields:
+          - label: Gambar
+            name: gambar
+            widget: image
+          - label: Tautan (opsional)
+            name: link
+            widget: string
+            required: false
+          - label: Teks alternatif
+            name: alt
+            widget: string
+            required: false
+- name: sidebar
+  label: Sidebar
+  files:
+  - name: kunjungi
+    label: 'Sidebar: Kunjungi Juga'
+    file: data/kunjungi.yaml
+    fields:
+    - label: Daftar
+      name: items
+      widget: list
+      required: false
+      summary: '{{fields.alt}}'
+      fields:
+      - label: Gambar
+        name: gambar
+        widget: image
+      - label: Tautan
+        name: link
+        widget: string
+      - label: Teks alternatif
+        name: alt
+        widget: string
+        required: false
+- name: pages
+  label: Halaman
+  label_singular: Halaman
+  folder: content/pages
+  extension: md
+  format: yaml-frontmatter
+  create: true
+  slug: '{{slug}}'
+  fields:
+  - label: Judul
+    name: title
+    widget: string
+  - label: 'Alamat halaman (contoh: /profil-pengurus/)'
+    name: url
+    widget: string
+  - label: Tanggal
+    name: date
+    widget: datetime
+    required: false
+  - label: Isi
+    name: body
+    widget: markdown
+- name: gabungan
+  label: Halaman gabungan kategori
+  files:
+  - name: berita
+    label: Semua Berita
+    file: content/berita/_index.md
+    fields:
+    - label: Judul
+      name: title
+      widget: string
+    - label: Layout
+      name: layout
+      widget: hidden
+      default: gabungan
+    - label: Kategori yang digabung
+      name: kategori
+      widget: select
+      multiple: true
+      options: *id001
+  - name: inspirasi
+    label: Semua Inspirasi
+    file: content/inspirasi/_index.md
+    fields:
+    - label: Judul
+      name: title
+      widget: string
+    - label: Layout
+      name: layout
+      widget: hidden
+      default: gabungan
+    - label: Kategori yang digabung
+      name: kategori
+      widget: select
+      multiple: true
+      options: *id001
+- name: posts
+  label: Artikel
+  label_singular: Artikel
+  folder: content/posts
+  extension: md
+  format: yaml-frontmatter
+  create: true
+  slug: '{{slug}}'
+  summary: '{{title}} - {{date}}'
+  sortable_fields:
+  - date
+  - title
+  fields:
+  - label: Judul
+    name: title
+    widget: string
+  - label: Alamat pendek (opsional, kosongkan agar dibuat otomatis dari judul)
+    name: slug
+    widget: string
+    required: false
+  # Alamat lama dari Blogger (contoh: /2015/10/judul-artikel.html).
+  # Disembunyikan dari editor, tetapi WAJIB ada di daftar field: kalau tidak
+  # dicantumkan, Sveltia akan membuang baris ini setiap kali artikel disimpan
+  # dan tautan lama (termasuk hasil pencarian Google) menjadi mati.
+  - label: Alamat lama (jangan diubah)
+    name: url
+    widget: hidden
+    required: false
+  - label: Tanggal terbit
+    name: date
+    widget: datetime
+  - label: Kategori
+    name: categories
+    widget: select
+    multiple: true
+    options:
+    - Fraksi PKS
+    - Harokah
+    - Inspirasi
+    - Kiprah Kami
+    - Oase
+    - Pilkada
+    - Ragam
+    - Seputar Boyolali
+    - Seputar PKS
+    - Topik Pilihan
+  - label: Tag (opsional)
+    name: tags
+    widget: list
+    required: false
+    default: []
+  - label: Gambar sampul
+    name: image
+    widget: image
+    required: false
+  - label: Keterangan gambar
+    name: image_caption
+    widget: string
+    required: false
+  - label: Ringkasan singkat (opsional)
+    name: description
+    widget: text
+    required: false
+  - label: Isi
+    name: body
+    widget: markdown

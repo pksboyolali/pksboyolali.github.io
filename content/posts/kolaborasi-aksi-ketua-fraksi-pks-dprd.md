@@ -1,0 +1,11 @@
+---
+title: "Kolaborasi Aksi Ketua Fraksi PKS DPRD Boyolali: Bantu Warga Korban Kebakaran di Wonosegoro"
+date: 2024-11-09T08:40:00+07:00
+url: "/2024/11/kolaborasi-aksi-ketua-fraksi-pks-dprd.html"
+categories: ["Fraksi PKS", "Kiprah Kami", "Seputar PKS"]
+tags: []
+image: "/images/uploads/2024/11/user-g029e3wx2ave9iywe951zspuuze2-blogpost-7d646810.jpeg"
+draft: false
+---
+
+<p><img src="/images/uploads/2024/11/user-g029e3wx2ave9iywe951zspuuze2-blogpost-7d646810.jpeg" width="400"></p><p><span class="ql-cursor">﻿</span>Boyolali – Wahyono, Ketua Fraksi PKS DPRD Boyolali, bersama mitra kolaborasi aksi Solo Peduli dan Al Hikmah Karanggede Peduli, menyerahkan bantuan berupa uang tunai dan sembako kepada keluarga Bapak Supar, warga Dusun Kedungrowo, Desa Kauman, Kecamatan Wonosegoro, Boyolali (09/11).<br></p><p>Kebakaran yang terjadi pada tanggal 26 Oktober dini hari ini mengakibatkan salah satu rumah warga habis dilalap api. Dalam peristiwa tersebut, Bapak Supar mengalami luka bakar di sebagian lengan saat berusaha menyelamatkan hewan ternaknya.</p><p><img src="/images/uploads/2024/11/user-g029e3wx2ave9iywe951zspuuze2-blogpost-577699d4.jpeg" width="400"><br></p><p>Bantuan ini merupakan aksi kolaborasi bersama beberapa lembaga sosial untuk meringankan beban keluarga Bapak Supar yang terkena musibah. Tidak hanya sekadar memberikan bantuan, aksi ini juga menjadi wujud nyata kepedulian dan sinergi antara Fraksi PKS DPRD Boyolali dan berbagai pihak yang ingin memastikan masyarakat terdampak bencana mendapat dukungan yang memadai.</p><p><img src="/images/uploads/2024/11/user-g029e3wx2ave9iywe951zspuuze2-blogpost-f29ae818.jpeg" width="400"><br></p><p>Bapak Wahyono menyampaikan harapan bahwa bantuan ini bisa sedikit meringankan beban keluarga yang terdampak dan memberikan semangat dalam menghadapi masa-masa sulit. "Kami berharap melalui sinergi antara Fraksi, Solo Peduli, dan Al Hikmah Karanggede Peduli, masyarakat bisa merasakan kepedulian bersama. Kami terus berupaya hadir untuk membantu warga Boyolali yang membutuhkan," ucapnya.<br></p><p>Semoga aksi ini menginspirasi semakin banyak pihak untuk turut serta mendukung warga yang mengalami musibah agar dapat kembali bangkit. (nh/ta)</p>

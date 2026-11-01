@@ -1,0 +1,33 @@
+{{- /* Sidebar: Berita Terkini, daftar Kategori, dan gambar "Kunjungi Juga". */ -}}
+<section class="flex flex-col">
+  {{ partial "section-title.html" (dict "title" "Berita Terkini" "class" "mb-8") }}
+  <div class="flex flex-col gap-6">
+    {{ range first 5 (where site.RegularPages "Section" "posts").ByPublishDate.Reverse }}
+      {{ partial "card.html" (dict "p" . "layout" "horizontal" "desc" false) }}
+    {{ end }}
+  </div>
+</section>
+
+{{ with site.Taxonomies.categories.ByCount }}
+<section class="flex flex-col mt-10">
+  {{ partial "section-title.html" (dict "title" "Kategori" "class" "mb-4") }}
+  <ul class="flex flex-col gap-2 bg-white rounded-2xl shadow-md border border-pks-black-50 p-4">
+    {{ range . }}{{ $n := .Count }}{{ with .Page }}
+    <li class="flex flex-row justify-between text-sm"><a href="{{ .RelPermalink }}" class="hover:text-pks-orange">{{ .Title }}</a><span class="text-pks-black-300">{{ $n }}</span></li>
+    {{ end }}{{ end }}
+  </ul>
+</section>
+{{ end }}
+
+{{ with (hugo.Data.kunjungi | default dict).items }}
+<section class="flex flex-col mt-10">
+  {{ partial "section-title.html" (dict "title" "Kunjungi Juga" "class" "mb-4") }}
+  <div class="flex flex-col gap-4">
+    {{ range . }}
+    <a href="{{ .link }}" target="_blank" rel="noopener" class="block hover:*:scale-105 hover:*:shadow-lg">
+      <img src="{{ .gambar }}" alt="{{ .alt }}" loading="lazy" class="w-full h-auto rounded-xl shadow-md transition-all duration-500 ease-in-out">
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

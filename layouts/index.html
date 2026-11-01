@@ -1,0 +1,41 @@
+{{- /* Beranda. Susunan blok diambil dari data/beranda.yaml (bisa diubah lewat admin),
+     jadi menambah/mengurangi kolom tidak perlu menyentuh berkas ini. */ -}}
+{{ define "main" }}
+<h1 class="sr-only">{{ (partialCached "func/id.html" "x" "id").nama }}</h1>
+{{ $d := hugo.Data.beranda | default dict }}
+{{ partial "hero-carousel.html" $d.banner }}
+
+<div class="grid grid-cols-1 gap-12 mb-12">
+  {{ with $d.susunan }}
+  <div class="flex flex-col gap-12">
+    {{ range . }}
+      {{ if eq .tipe "sorotan_berita" }}
+        {{ partial "blocks/sorotan.html" . }}
+
+      {{ else if eq .tipe "dua_kolom_berita" }}
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8">
+          {{ partial "blocks/kolom.html" (dict "kategori" .kolom_1.kategori "ikon" .kolom_1.ikon "jumlah" 3 "layout" "horizontal") }}
+          {{ partial "blocks/kolom.html" (dict "kategori" .kolom_2.kategori "ikon" .kolom_2.ikon "jumlah" 3 "layout" "horizontal") }}
+        </section>
+
+      {{ else if eq .tipe "tiga_kolom_berita" }}
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+          {{ partial "blocks/kolom.html" (dict "kategori" .kolom_1.kategori "ikon" .kolom_1.ikon "jumlah" 1 "layout" "vertical") }}
+          {{ partial "blocks/kolom.html" (dict "kategori" .kolom_2.kategori "ikon" .kolom_2.ikon "jumlah" 1 "layout" "vertical") }}
+          {{ partial "blocks/kolom.html" (dict "kategori" .kolom_3.kategori "ikon" .kolom_3.ikon "jumlah" 1 "layout" "vertical") }}
+        </section>
+
+      {{ else if eq .tipe "gambar_lebar" }}
+        {{ partial "blocks/gambar.html" (dict "items" (slice .) "cols" 1) }}
+
+      {{ else if eq .tipe "dua_kolom_gambar" }}
+        {{ partial "blocks/gambar.html" (dict "items" .gambar "cols" 2) }}
+
+      {{ else if eq .tipe "tiga_kolom_gambar" }}
+        {{ partial "blocks/gambar.html" (dict "items" .gambar "cols" 3) }}
+      {{ end }}
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}

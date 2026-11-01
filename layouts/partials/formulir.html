@@ -1,0 +1,174 @@
+{{- /* Formulir Aspirasi dan Gabung PKS.
+     Dipanggil dari _default/single.html dengan dict "page" dan "jenis".
+     Endpoint diambil dari front matter `form_action` (alamat /exec Apps Script).
+     Data wilayah dari data/wilayah.yaml. */ -}}
+{{- $page := .page -}}
+{{- $jenis := .jenis -}}
+{{- $aksi := $page.Params.form_action | default "" -}}
+{{- $nik := $page.Params.nik_tampil | default false -}}
+
+{{- /* Skema isian tambahan: dikirim ke form.js sebagai JSON agar form.js tahu
+       mana yang wajib dan label apa yang dipakai di Sheets. */ -}}
+{{- $skema := slice -}}
+{{- range $page.Params.isian -}}
+  {{- $skema = $skema | append (dict
+        "kunci" (.kunci | default "")
+        "label" (.label | default .kunci)
+        "wajib" (.wajib | default false)) -}}
+{{- end -}}
+
+<section class="formulir" id="formulir">
+  <h2 class="formulir-judul">{{ if eq $jenis "aspirasi" }}Sampaikan Aspirasi{{ else }}Formulir Pendaftaran{{ end }}</h2>
+
+  {{- if not $aksi }}
+  <p class="formulir-notis">
+    Formulir ini belum diaktifkan. Sementara itu, silakan hubungi kantor DPD PKS Boyolali
+    di <strong>{{ hugo.Data.identitas.kontak.telepon }}</strong> atau
+    <strong>{{ hugo.Data.identitas.kontak.email }}</strong>.
+  </p>
+  {{- end }}
+
+  <form class="formulir-badan" method="post" action="{{ $aksi }}" data-formulir="{{ $jenis }}">
+    <input type="hidden" name="_jenis" value="{{ $jenis }}">
+    <input type="hidden" name="_waktu" value="">
+    {{- /* Diisi form.js dari skema di bawah: kunci mana yang wajib, dan label
+           tiap kolom untuk judul kolom baru di Sheets. */}}
+    <input type="hidden" name="_wajib" value="">
+    <input type="hidden" name="_label" value="">
+    <div class="formulir-jebakan" aria-hidden="true">
+      <label>Jangan diisi<input type="text" name="_jebakan" tabindex="-1" autocomplete="off"></label>
+    </div>
+
+    <div class="formulir-baris">
+      <div class="formulir-isian">
+        <label for="f-nama">Nama lengkap <span class="wajib">*</span></label>
+        <input id="f-nama" name="nama" type="text" required maxlength="80" autocomplete="name">
+      </div>
+      <div class="formulir-isian">
+        <label for="f-hp">Nomor HP / WhatsApp <span class="wajib">*</span></label>
+        <input id="f-hp" name="hp" type="tel" required maxlength="20" inputmode="tel"
+               autocomplete="tel" placeholder="08xxxxxxxxxx" data-hp>
+        <p class="formulir-galat" data-galat-for="hp" hidden></p>
+        <small class="formulir-bantuan">Angka saja. Boleh diawali <code>+62</code>,
+          spasi, atau tanda hubung. Contoh: <code>+62 812-3456-7890</code>.</small>
+      </div>
+    </div>
+
+    <div class="formulir-isian">
+      <label for="f-email">Email <small>(boleh dikosongkan)</small></label>
+      <input id="f-email" name="email" type="email" maxlength="100" autocomplete="email">
+    </div>
+
+    <div class="formulir-baris">
+      <div class="formulir-isian">
+        <label for="f-kecamatan">Kecamatan <span class="wajib">*</span></label>
+        <select id="f-kecamatan" name="kecamatan" required data-kecamatan>
+          <option value="">— pilih kecamatan —</option>
+          {{- range hugo.Data.wilayah }}
+          <option value="{{ .nama }}">{{ .nama }}</option>
+          {{- end }}
+        </select>
+      </div>
+      <div class="formulir-isian">
+        <label for="f-desa">Desa / kelurahan <span class="wajib">*</span></label>
+        <select id="f-desa" name="desa" required data-desa disabled>
+          <option value="">— pilih kecamatan dulu —</option>
+        </select>
+      </div>
+    </div>
+
+    {{- /* Isian tambahan — diatur dari CMS (Halaman Tunggal → Aspirasi / Gabung PKS).
+           Menambah isian di CMS tidak perlu mengubah skrip Apps Script. */}}
+    {{- with $page.Params.isian }}
+    <div class="formulir-anyar">
+      {{- range . }}
+      {{- $kunci := .kunci | default "" -}}
+      {{- $label := .label | default $kunci -}}
+      {{- $tipe := .jenis | default "teks" -}}
+      {{- $wajib := .wajib | default false -}}
+      {{- $penuh := ne (.lebar | default "penuh") "setengah" -}}
+      {{- $bantuan := .bantuan | default "" -}}
+      {{- if $kunci }}
+      <div class="formulir-isian{{ if $penuh }} formulir-isian--penuh{{ end }}">
+        <label for="f-{{ $kunci }}">{{ $label }}{{ if $wajib }} <span class="wajib">*</span>{{ else }} <small>(boleh dikosongkan)</small>{{ end }}</label>
+        {{- if eq $tipe "panjang" }}
+        <textarea id="f-{{ $kunci }}" name="{{ $kunci }}" rows="5" maxlength="4000"{{ if $wajib }} required{{ end }}></textarea>
+        {{- else if eq $tipe "pilihan" }}
+        <select id="f-{{ $kunci }}" name="{{ $kunci }}"{{ if $wajib }} required{{ end }}>
+          <option value="">— pilih {{ lower $label }} —</option>
+          {{- range .pilihan }}
+          <option value="{{ . }}">{{ . }}</option>
+          {{- end }}
+        </select>
+        {{- else if eq $tipe "email" }}
+        <input id="f-{{ $kunci }}" name="{{ $kunci }}" type="email" maxlength="100" autocomplete="email"{{ if $wajib }} required{{ end }}>
+        {{- else if eq $tipe "telepon" }}
+        <input id="f-{{ $kunci }}" name="{{ $kunci }}" type="tel" inputmode="tel" maxlength="20" autocomplete="tel" data-hp{{ if $wajib }} required{{ end }}>
+        <p class="formulir-galat" data-galat-for="{{ $kunci }}" hidden></p>
+        {{- else if eq $tipe "angka" }}
+        <input id="f-{{ $kunci }}" name="{{ $kunci }}" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="30"{{ if $wajib }} required{{ end }}>
+        {{- else }}
+        <input id="f-{{ $kunci }}" name="{{ $kunci }}" type="text" maxlength="200"{{ if $wajib }} required{{ end }}>
+        {{- end }}
+        {{- with $bantuan }}
+        <small class="formulir-bantuan">{{ . }}</small>
+        {{- end }}
+      </div>
+      {{- end }}
+      {{- end }}
+    </div>
+    {{- end }}
+
+    {{- if $nik }}
+    <div class="formulir-isian">
+      <label for="f-nik">NIK <span class="wajib">*</span></label>
+      <input id="f-nik" name="nik" type="text" inputmode="numeric" pattern="[0-9]{16}" maxlength="16" required autocomplete="off">
+      <small class="formulir-bantuan">16 angka sesuai KTP. Hanya dipakai untuk pendataan keanggotaan.</small>
+    </div>
+    {{- end }}
+
+    <label class="formulir-setuju">
+      <input type="checkbox" name="setuju" value="ya" required>
+      <span>Saya setuju data yang saya kirimkan disimpan dan digunakan DPD PKS Boyolali
+      untuk menindaklanjuti {{ if eq $jenis "aspirasi" }}aspirasi{{ else }}pendaftaran{{ end }} ini.</span>
+    </label>
+
+    <div class="formulir-aksi">
+      <button type="submit" class="formulir-tombol"{{ if not $aksi }} disabled{{ end }}>Kirim</button>
+      <p class="formulir-status" data-status role="status" aria-live="polite"></p>
+    </div>
+
+    {{- /* safeJS wajib: tanpa itu html/template meng-encode ulang JSON di dalam
+           <script> sehingga hasilnya menjadi string, bukan array. */}}
+    <script type="application/json" data-wilayah>{{ hugo.Data.wilayah | jsonify | safeJS }}</script>
+    <script type="application/json" data-skema>{{ $skema | jsonify | safeJS }}</script>
+  </form>
+</section>
+
+{{- /* Pop-up konfirmasi setelah kiriman berhasil. Dipindah ke <body> oleh form.js
+       agar posisi "fixed" tidak terpengaruh wadah ber-transform. */}}
+<div class="formulir-modal" data-modal hidden>
+  <div class="formulir-modal-latar"></div>
+  <div class="formulir-modal-kartu" role="dialog" aria-modal="true" tabindex="-1"
+       aria-labelledby="formulir-modal-judul" aria-describedby="formulir-modal-teks">
+    <span class="formulir-modal-ikon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+           stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+    </span>
+    <h3 class="formulir-modal-judul" id="formulir-modal-judul">
+      {{- if eq $jenis "aspirasi" }}Aspirasi Anda sudah terkirim{{ else }}Pendaftaran Anda sudah terkirim{{ end -}}
+    </h3>
+    <p class="formulir-modal-teks" id="formulir-modal-teks">
+      {{- if eq $jenis "aspirasi" -}}
+        Terima kasih. Kiriman Anda masuk ke kantor DPD PKS Boyolali dan akan diteruskan
+        kepada anggota fraksi sesuai daerah pemilihan Anda.
+      {{- else -}}
+        Terima kasih. Pengurus akan menghubungi Anda lewat nomor HP/WhatsApp yang Anda isi
+        untuk langkah berikutnya.
+      {{- end -}}
+    </p>
+    <a class="formulir-modal-tombol" href="{{ site.Home.RelPermalink }}" data-modal-tombol>Kembali ke beranda</a>
+  </div>
+</div>
+
+<script src="{{ "assets/form.js" | relURL }}" defer></script>

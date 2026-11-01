@@ -1,0 +1,23 @@
+{{- /* Arsip tanggal: /2026/ (tahun) dan /2025/10/ (bulan). Halaman dibuat otomatis oleh scripts/pra_build.py */ -}}
+{{ define "main" }}
+<header class="mb-8">
+  <h1 class="items-center gap-4 text-3xl font-semibold text-pks-orange"><span class="text-black! font-semibold">{{ .Title }}</span></h1>
+</header>
+{{ $y := int .Params.tahun }}
+{{ $awal := "" }}{{ $akhir := "" }}
+{{ if .Params.bulan }}
+  {{ $awal = time.AsTime (printf "%04d-%02d-01T00:00:00+07:00" $y (int .Params.bulan)) }}
+  {{ $akhir = $awal.AddDate 0 1 0 }}
+{{ else }}
+  {{ $awal = time.AsTime (printf "%04d-01-01T00:00:00+07:00" $y) }}
+  {{ $akhir = $awal.AddDate 1 0 0 }}
+{{ end }}
+{{ $semua := where site.RegularPages "Section" "posts" }}
+{{ $isi := where (where $semua "Date" "ge" $awal) "Date" "lt" $akhir }}
+{{ $pager := .Paginate ($isi.ByPublishDate.Reverse) }}
+{{ range $pager.Pages }}{{ partial "list-item.html" . }}{{ else }}
+  {{ partial "alert.html" (dict "text" "Maaf, tidak ada berita yang ditemukan.") }}
+  {{ partial "search-form.html" . }}
+{{ end }}
+{{ partial "pagination.html" $pager }}
+{{ end }}

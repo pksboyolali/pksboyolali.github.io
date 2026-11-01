@@ -1,0 +1,69 @@
+{{- /* Blok halaman Profil Pengurus. Data di front matter content/pages/profil-pengurus.md */ -}}
+{{- with .Params.kelompok }}
+<section class="pg">
+
+  {{- if $.Params.cari_aktif }}
+  <div class="pg-cari">
+    <input id="pg-cari" type="search" placeholder="Cari nama pengurus…" autocomplete="off" aria-label="Cari nama pengurus">
+    <p class="pg-cari-info" id="pg-cari-info" aria-live="polite"></p>
+  </div>
+  {{- end }}
+
+  {{- range . }}
+  {{- $jumlah := 0 }}
+  {{- with .pengurus }}{{ $jumlah = len . }}{{ end }}
+  {{- range .unit }}{{ $jumlah = add $jumlah (len .pengurus) }}{{ end }}
+  <div class="pg-kelompok" data-kelompok>
+    <h2 class="pg-judul">{{ .nama }}<span class="pg-jumlah">{{ $jumlah }} orang</span></h2>
+
+    {{- with .pengurus }}
+    {{ partial "tabel-pengurus.html" . }}
+    {{- end }}
+
+    {{- range .unit }}
+    <div class="pg-unit-blok">
+      <h3 class="pg-unit">{{ .nama }}</h3>
+      {{- with .pengurus }}{{ partial "tabel-pengurus.html" . }}{{ end }}
+    </div>
+    {{- end }}
+  </div>
+  {{- end }}
+
+</section>
+
+{{- if $.Params.cari_aktif }}
+<script>
+  (function () {
+    var kotak = document.getElementById('pg-cari');
+    if (!kotak) return;
+    var info = document.getElementById('pg-cari-info');
+    function saring() {
+      var q = kotak.value.trim().toLowerCase();
+      var cocok = 0;
+      document.querySelectorAll('[data-kelompok]').forEach(function (k) {
+        var terlihat = 0;
+        k.querySelectorAll('.pg-baris').forEach(function (b) {
+          var nama = b.getAttribute('data-nama') || '';
+          // Cocokkan awal setiap kata, supaya "yuni" tidak ikut menangkap "Wahyuningsih".
+          var tampil = !q || nama.split(/[^a-z0-9]+/).some(function (kata) {
+            return kata.indexOf(q) === 0;
+          });
+          b.hidden = !tampil;
+          if (tampil) terlihat++;
+        });
+        k.querySelectorAll('.pg-unit-blok').forEach(function (blok) {
+          blok.hidden = blok.querySelectorAll('.pg-baris:not([hidden])').length === 0;
+        });
+        k.hidden = terlihat === 0;
+        cocok += terlihat;
+      });
+      if (!q) { info.textContent = ''; }
+      else if (cocok === 0) { info.textContent = 'Tidak ada nama yang cocok.'; }
+      else { info.textContent = cocok + ' nama ditemukan.'; }
+    }
+    kotak.addEventListener('input', saring);
+  })();
+</script>
+{{- end }}
+
+{{- end }}

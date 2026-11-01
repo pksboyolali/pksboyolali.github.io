@@ -1,0 +1,37 @@
+nama_situs: DPD PKS Boyolali
+deskripsi: Situs resmi DPD Partai Keadilan Sejahtera Kabupaten Boyolali
+jenis: kabupaten
+wilayah: Boyolali
+judul_baris_1: ''
+judul_baris_2: ''
+judul_baris_3: ''
+kontak:
+  kantor: Markaz Dakwah DPD PKS Boyolali
+  alamat: Jl. Tape Baru, Tegalmulyo, Kemiri, Kec. Mojosongo, Kabupaten Boyolali, Jawa Tengah 57321
+  telepon: (0276) 323814
+  email: pks.boyolali@gmail.com
+  peta: https://maps.app.goo.gl/wtSHYnfd7vvwvp6MA
+induk:
+  nama: pks.id
+  url: https://pks.id
+teks_hak_cipta: Website Resmi DPD Partai Keadilan Sejahtera Kabupaten Boyolali
+teks_sosial: ''
+media_sosial:
+  - nama: Youtube
+    url: https://youtube.com/@pksboyolali
+  - nama: Instagram
+    url: https://instagram.com/pksboyolali
+  - nama: Tiktok
+    url: https://www.tiktok.com/@pksboyolali
+  - nama: X alias Twitter
+    url: https://x.com/pks_boyolali
+  - nama: Facebook
+    url: https://facebook.com/pksboyolali
+bagikan:
+  atas_artikel: false
+  atas_halaman: false
+  bawah: true
+  mengambang_ponsel: false
+alamat_artikel:
+  maks_kata: 5
+  maks_huruf: 70
