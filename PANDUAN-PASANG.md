@@ -112,6 +112,12 @@ gagal di tengah.
    (bukan "Deploy from a branch").
 3. Tidak perlu memilih tema; situs sudah punya tampilan sendiri.
 
+**Tanda pengaturan ini sudah benar:** di tab **Actions** hanya ada satu proses
+per publikasi, yaitu **Publikasi situs**. Bila muncul juga proses bernama
+**pages build and deployment**, artinya sumber Pages masih "Deploy from a
+branch" — proses itu akan menimpa hasil build Hugo beberapa detik setelah
+publikasi selesai. Rinciannya di bagian 12.
+
 ### 4c. Jalankan publikasi pertama
 
 1. Buka tab **Actions**.
@@ -468,6 +474,8 @@ Untuk menambah, misalnya "Ekonomi":
 | Gejala | Penyebab dan solusi |
 |---|---|
 | Halaman putih / 404 setelah push | Buka tab **Actions**. Bila merah, buka prosesnya dan baca baris merah paling atas. Sering karena salah ketik di YAML. |
+| **Beranda menampilkan isi README/panduan, bukan tampilan situs** | Sumber Pages masih **Deploy from a branch**. GitHub merender `README.md` menjadi beranda (Jekyll) dan hasilnya menimpa build Hugo. Perbaiki: **Settings → Pages → Source: GitHub Actions** → **Save**, lalu jalankan ulang **Publikasi situs**. Bila pilihannya sudah "GitHub Actions" tetapi gejala ini tetap muncul, ganti dulu ke "Deploy from a branch", **Save**, lalu kembalikan ke "GitHub Actions", **Save**, dan jalankan ulang workflow. |
+| Di tab Actions ada dua proses: **Publikasi situs** dan **pages build and deployment** | Tanda sumber Pages masih branch. Setelah sumber diubah ke GitHub Actions, proses `pages build and deployment` tidak muncul lagi dan hanya build Hugo yang tayang. |
 | Proses gagal: "Resource not accessible" / "permission denied" | **Settings → Actions → General → Workflow permissions** belum **Read and write**. |
 | Situs tampil tanpa warna/gambar | Alamat domain belum cocok. Periksa `hugo.toml` bagian `baseURL` dan **Settings → Pages → Custom domain**. |
 | "DNS check unsuccessful" | Catatan CNAME belum ada atau salah. Nilai harus `pksboyolali.github.io` (bukan alamat repo). Tunggu hingga 1 jam. |
