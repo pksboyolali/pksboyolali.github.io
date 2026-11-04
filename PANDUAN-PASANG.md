@@ -1,7 +1,7 @@
 # Panduan Pemasangan — Situs DPD PKS Boyolali
 
 Panduan ini untuk **orang teknis** yang memasang situs dari nol sampai tayang di
-`https://boyolali.pks.id`. Tidak perlu bisa menulis kode; cukup mengikuti langkah
+`https://boyolali.pks.my.id`. Tidak perlu bisa menulis kode; cukup mengikuti langkah
 berurutan dan menyalin-tempel.
 
 Panduan untuk pengurus yang **menulis berita** ada di berkas terpisah:
@@ -17,14 +17,14 @@ Panduan untuk pengurus yang **menulis berita** ada di berkas terpisah:
 | Sveltia CMS | Panel admin di `/admin/` untuk menulis berita lewat browser. Menyimpan langsung ke GitHub. |
 | GitHub | Tempat menyimpan berkas situs (repositori) sekaligus mesin publikasinya. |
 | GitHub Pages | Tempat situs ditayangkan. **Gratis**, tanpa server, tanpa tagihan bulanan. |
-| Domain | `boyolali.pks.id`, diarahkan ke GitHub Pages lewat DNS. |
+| Domain | `boyolali.pks.my.id`, diarahkan ke GitHub Pages lewat DNS. |
 
 Alur kerja setelah terpasang:
 
 ```
 Pengurus menulis di /admin/  ->  tersimpan sebagai berkas di GitHub
                              ->  GitHub Actions membangun situs (2-3 menit)
-                             ->  tayang di boyolali.pks.id
+                             ->  tayang di boyolali.pks.my.id
 ```
 
 **Biaya:** Rp0. Yang diperlukan hanya akun GitHub gratis dan domain `pks.id`
@@ -130,29 +130,30 @@ Setelah selesai, situs bisa dibuka di `https://pksboyolali.github.io/`
 
 ---
 
-## 5. Memasang domain `boyolali.pks.id`
+## 5. Memasang domain sendiri
 
-### 5a. Berkas CNAME
+Rencana domain situs ini berjalan dua tahap:
 
-Berkas CNAME **sengaja ditahan** selama domain belum bisa diarahkan. Berkasnya
-ada di akar repositori dengan nama `CNAME.nanti`, isinya `boyolali.pks.id`.
+| Tahap | Domain | Keterangan |
+|---|---|---|
+| Sekarang | `boyolali.pks.my.id` | domain yang sudah dipegang sendiri |
+| Menyusul | `boyolali.pks.id` | setelah disetujui DPP; lihat bagian 5e |
 
-**Mengapa ditahan:** begitu berkas CNAME ikut terbit, GitHub menganggap situs
-memakai domain khusus lalu mengalihkan `https://pksboyolali.github.io/` ke
-`https://boyolali.pks.id/`. Selama DNS belum diatur alamat itu belum hidup, jadi
-situs terlihat mati padahal proses build-nya sukses.
+**Batas penting:** GitHub Pages hanya bisa memasang **satu domain utama** per
+situs. Jadi `boyolali.pks.id` nanti **tidak bisa** ditambahkan begitu saja di
+samping yang lama — perlu salah satu cara di bagian 5e.
 
-**Saat DNS sudah siap:**
+### 5a. Berkas CNAME tidak dipakai lagi
 
-1. Pindahkan `CNAME.nanti` ke dalam folder `static/`, ganti namanya menjadi
-   `CNAME` (tanpa embel-embel). Isinya jangan diubah.
-2. Commit. Workflow menerbitkan ulang dan domain ikut terpasang.
-3. Lanjut ke 5c.
+Karena situs ini terbit lewat workflow **GitHub Actions**, GitHub **mengabaikan**
+berkas CNAME. Domain sepenuhnya diatur di **Settings → Pages**. Berkas
+`CNAME.nanti` di akar repositori kini hanya catatan; boleh dibiarkan, boleh
+dihapus, tidak berpengaruh ke situs.
 
 ### 5b. Pengaturan DNS
 
-`boyolali.pks.id` adalah subdomain, jadi cukup **satu catatan CNAME**. Minta
-pengurus yang memegang DNS `pks.id` menambahkan:
+`boyolali.pks.my.id` adalah subdomain, jadi cukup **satu catatan CNAME**. Di
+panel DNS `pks.my.id` tambahkan:
 
 | Jenis | Nama/Host | Nilai/Tujuan | TTL |
 |---|---|---|---|
@@ -162,18 +163,48 @@ pengurus yang memegang DNS `pks.id` menambahkan:
 > Contoh: akun `pksboyolali` → `pksboyolali.github.io`.
 
 Bila penyedia DNS meminta titik di akhir, tulis `pksboyolali.github.io.` — keduanya benar.
+Jangan memakai catatan `A` untuk subdomain, dan jangan memakai wildcard `*.pks.my.id`.
 
 ### 5c. Daftarkan domain di GitHub
 
+Kerjakan **berdekatan** dengan 5b: daftarkan dulu, lalu segera pasang DNS.
+
 1. **Settings** → **Pages** → **Custom domain**.
-2. Isi `boyolali.pks.id` → **Save**.
+2. Isi `boyolali.pks.my.id` → **Save**.
 3. Tunggu pemeriksaan DNS (bisa 10 menit sampai 24 jam; biasanya di bawah 1 jam).
 4. Setelah muncul tulisan "DNS check successful", centang **Enforce HTTPS**.
    Sertifikat HTTPS dibuat otomatis dan gratis, butuh beberapa menit.
 
+> Selama DNS belum benar, alamat `https://pksboyolali.github.io/` sudah
+> dialihkan ke domain baru. Jadi situs bisa tampak mati untuk sementara —
+> itu wajar, bukan build yang gagal.
+
 ### 5d. Bila memakai `www`
 
-Tidak perlu. Situs ini memakai `boyolali.pks.id` tanpa `www`.
+Tidak perlu. Situs ini memakai subdomain langsung tanpa `www`.
+
+### 5e. Nanti: memakai dua domain sekaligus
+
+Ada tiga pilihan. Semuanya butuh kendali atas DNS domain yang bersangkutan.
+
+| Cara | Hasil | Kebutuhan |
+|---|---|---|
+| **A. Alihkan (301)** domain lama ke baru | Pengunjung domain lama otomatis pindah ke domain baru. Alamat di bilah peramban berubah. | DNS domain lama bisa membuat aturan redirect (Cloudflare Redirect Rules, atau fitur "URL forwarding" di penyedia domain) |
+| **B. Cloudflare Worker** di depan domain kedua | **Kedua domain benar-benar hidup**, isi sama, alamat tetap masing-masing. | Domain kedua dikelola lewat Cloudflare (gratis, batas 100.000 permintaan/hari) |
+| **C. Tukar domain utama** | Domain baru jadi utama; domain lama dialihkan (butuh cara A juga) | Sama seperti A |
+
+Yang **tidak bisa**: menaruh dua nilai di `CNAME` atau menambah dua domain di
+Settings → Pages. Catatan CNAME `boyolali.pks.id` yang menunjuk ke
+`pksboyolali.github.io` akan menghasilkan halaman 404 dari GitHub, karena
+domain itu tidak terdaftar sebagai domain situs.
+
+**Saran:** pakai cara A. Untuk pengunjung hasilnya sama saja — tetap sampai ke
+situs yang sama, hanya alamatnya menyesuaikan. Cara B baru dipakai bila DPP
+memang ingin `boyolali.pks.id` tampil apa adanya di bilah alamat.
+
+Saat memilih domain baru sebagai utama, jangan lupa menyesuaikan tiga tempat:
+`hugo.toml` (`baseURL`), `static/admin/config.yml` (`site_url` dan `display_url`),
+lalu **Settings → Pages → Custom domain**.
 
 ---
 
@@ -194,7 +225,7 @@ sama, karena Sveltia memakai `site_url` untuk menyusun alamat gambar media.
 Situs ini memakai cara masuk **token GitHub** — tidak perlu server OAuth, tidak
 perlu layanan pihak ketiga, jadi tetap gratis.
 
-1. Buka `https://pksboyolali.github.io/admin/` (atau `https://boyolali.pks.id/admin/`
+1. Buka `https://pksboyolali.github.io/admin/` (atau `https://boyolali.pks.my.id/admin/`
    bila domain sudah aktif).
 2. Klik **Sign In with Token**.
 3. Akan muncul jendela berisi tautan ke halaman pembuatan token GitHub dengan
@@ -228,19 +259,54 @@ Untuk cara kedua: **Settings** → **Collaborators** → **Add people** → masu
 akun GitHub pengurus → pilih peran **Write**. Setelah menerima undangan, orang
 tersebut membuat token sendiri seperti langkah 6b.
 
+### 6d. Kenapa "Sign in with GitHub" tidak dipakai
+
+Di halaman masuk admin ada dua pilihan: **token** dan **akun GitHub**. Yang
+dipakai hanya **token**.
+
+**Sebabnya:** tanpa server OAuth sendiri, Sveltia memakai layanan OAuth milik
+Netlify (`api.netlify.com/auth`). Layanan itu hanya bekerja untuk situs yang
+terdaftar di Netlify. Untuk situs GitHub Pages, alamat itu menjawab **404 Not
+Found**, sehingga tombolnya berujung pada halaman kosong atau pesan galat.
+
+Karena itu `static/admin/config.yml` memuat baris:
+
+```yaml
+auth_methods: [token]
+```
+
+Baris ini menyembunyikan tombol GitHub supaya tidak ada yang menekan tombol
+yang sudah pasti gagal. Token tetap tersedia dan itulah cara masuk yang resmi.
+
+Tombol **Work with Local Repository** tidak perlu dimatikan: Sveltia hanya
+menampilkannya bila alamat situs dibuka dari `localhost` atau `127.0.0.1`
+(pratinjau lokal). Di situs online tombol itu tidak pernah muncul — sudah
+diperiksa langsung di `pksboyolali.github.io/admin/`.
+
+**Bila suatu saat ingin tombol GitHub hidup lagi**, ada dua jalan:
+
+| Jalan | Yang perlu disiapkan | Kerumitan |
+|---|---|---|
+| **Sveltia CMS Authenticator di Cloudflare Workers** (disarankan) | Deploy worker dari `github.com/sveltia/sveltia-cms-auth`, buat GitHub OAuth App (callback: `https://NAMA-WORKER.workers.dev/callback`), isi `GITHUB_CLIENT_ID`, `GITHUB_CLIENT_SECRET`, `ALLOWED_DOMAINS=boyolali.pks.my.id` | Sedang — perlu akun Cloudflare gratis |
+| **Netlify sebagai penyedia OAuth** | Buat situs Netlify kosong, pasang OAuth App GitHub dengan callback `https://api.netlify.com/auth/done`, isi Client ID/Secret di Netlify, lalu tambahkan `site_domain: boyolali.pks.my.id` | Ringan — tanpa kode, tapi bergantung layanan pihak ketiga |
+
+Setelah salah satu jalan siap, tambahkan `base_url:` (jalan pertama) atau
+`site_domain:` (jalan kedua) pada blok `backend:` di `config.yml`, lalu **hapus**
+baris `auth_methods: [token]`.
+
 ---
 
 ## 7. Daftar periksa setelah tayang
 
-Buka `https://boyolali.pks.id` dan periksa:
+Buka `https://boyolali.pks.my.id` dan periksa:
 
 - [ ] Beranda tampil dengan susunan berita (Sorotan, 2 kolom, 3 kolom).
 - [ ] Menu header dan dropdown berfungsi, termasuk di ponsel (tombol garis tiga).
 - [ ] Klik salah satu berita → halaman artikel terbuka, gambar dan isi tampil.
 - [ ] Artikel lama tetap di alamat aslinya, contoh:
-      `https://boyolali.pks.id/2015/10/judul-artikel.html`
-- [ ] Arsip tahun/bulan: `https://boyolali.pks.id/2015/10/`
-- [ ] Kategori: `https://boyolali.pks.id/kategori/seputar-pks/`
+      `https://boyolali.pks.my.id/2015/10/judul-artikel.html`
+- [ ] Arsip tahun/bulan: `https://boyolali.pks.my.id/2015/10/`
+- [ ] Kategori: `https://boyolali.pks.my.id/kategori/seputar-pks/`
 - [ ] Pencarian (ikon kaca pembesar) mengembalikan hasil.
 - [ ] Halaman statis: `/profil-fraksi/`, `/profil-pengurus/`, `/aspirasi/`, `/gabung/`.
 - [ ] Formulir Aspirasi dan Gabung PKS terkirim dan barisnya masuk ke Sheets
@@ -482,6 +548,7 @@ Untuk menambah, misalnya "Ekonomi":
 | HTTPS tidak bisa dicentang | Tunggu sertifikat selesai dibuat (bisa 15–60 menit setelah DNS benar). |
 | `/admin/` kosong atau "repo not found" | `repo:` di `static/admin/config.yml` tidak cocok dengan nama repositori. Lihat bagian 6a. |
 | Login CMS gagal "not authorized" | Token tidak punya izin `Contents: Read and write`, atau akun tidak punya akses tulis ke repo. |
+| Tombol **Sign in with GitHub** berakhir di halaman kosong / 404 | Belum ada server OAuth. Tanpa itu Sveltia memakai `api.netlify.com` yang menjawab 404 untuk situs GitHub Pages. Pakai **token**; rincian di bagian 6d. |
 | Gambar tidak muncul di artikel | Berkas gambar belum terunggah. Pastikan folder `static/images/uploads/` ikut ter-commit. |
 | Pencarian tidak menemukan apa pun | Indeks Pagefind belum dibuat. Pastikan langkah "Indeks pencarian" di workflow tidak dihapus. |
 | Berita baru tidak muncul | Proses build masih berjalan (±3 menit) atau artikel tersimpan sebagai draf. Cek tab **Actions**. |

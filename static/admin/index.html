@@ -38,6 +38,23 @@
         --sui-primary-accent-color-translucent: rgba(254, 80, 0, 0.12) !important;
         --sui-primary-accent-color-translucent-light: rgba(254, 80, 0, 0.06) !important;
       }
+
+      /* Judul halaman masuk ("Admin DPD PKS Boyolali") dibuat tetap satu baris di ponsel.
+         Sveltia memakai ukuran --sui-font-size-xxx-large (32px) sehingga di layar sempit
+         kata "Boyolali" terdorong ke baris kedua. Ukuran huruf di sini dibuat mengikuti
+         lebar layar, lalu dipaksa satu baris. Selektor .container .inner h1 sengaja dipakai
+         agar menang dari gaya bawaan Sveltia tanpa menyentuh berkas pustakanya. */
+      @media (max-width: 480px) {
+        .container .inner h1 {
+          font-size: clamp(13px, 4.4vw, 20px) !important;
+          white-space: nowrap !important;
+          letter-spacing: -0.2px;
+          line-height: 1.25;
+        }
+        .container {
+          padding: 20px !important;
+        }
+      }
     </style>
   </head>
   <body>

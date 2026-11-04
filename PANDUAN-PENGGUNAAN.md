@@ -11,7 +11,7 @@ Panduan untuk memasang situs dari nol ada di berkas terpisah:
 
 ## 1. Masuk ke admin
 
-1. Buka: **https://boyolali.pks.id/admin/**
+1. Buka: **https://boyolali.pks.my.id/admin/**
 2. Klik tombol **Sign In with Token**.
 3. Muncul jendela kecil berisi kotak untuk menempel token. Tempel token yang
    diberikan admin situs, lalu klik **Sign In**.

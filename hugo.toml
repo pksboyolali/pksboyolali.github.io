@@ -2,7 +2,9 @@
 #  DPD PKS Boyolali - konfigurasi situs (Hugo)
 #  Menu header: data/menu.yaml | identitas dan kontak: data/identitas.yaml (keduanya bisa diedit lewat admin).
 # =====================================================================
-baseURL = "https://boyolali.pks.id/"
+# Alamat resmi saat ini. Saat build di GitHub Actions, nilai ini ditimpa
+# otomatis oleh alamat domain yang terpasang di Settings -> Pages.
+baseURL = "https://boyolali.pks.my.id/"
 title = "DPD PKS Boyolali"
 locale = "id-ID"
 defaultContentLanguage = "id"

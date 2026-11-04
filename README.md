@@ -7,7 +7,7 @@ Dua panduan terpisah:
 
 | Berkas | Untuk siapa | Isi |
 |---|---|---|
-| **[PANDUAN-PASANG.md](PANDUAN-PASANG.md)** | orang teknis | memasang dari nol: GitHub, Pages, domain `boyolali.pks.id`, token CMS |
+| **[PANDUAN-PASANG.md](PANDUAN-PASANG.md)** | orang teknis | memasang dari nol: GitHub, Pages, domain `boyolali.pks.my.id`, token CMS |
 | **[PANDUAN-PENGGUNAAN.md](PANDUAN-PENGGUNAAN.md)** | pengurus | menulis berita, banner, menu, halaman — tanpa istilah teknis |
 
 ---
@@ -177,4 +177,5 @@ Pengaturan awal yang wajib:
 1. **Settings → Actions → General → Workflow permissions** → **Read and write permissions** (dipakai untuk menyimpan
    `slug:` dan halaman arsip kembali ke repo).
 2. **Settings → Pages → Source: GitHub Actions**.
-3. **Settings → Pages → Custom domain**: `boyolali.pks.id` (berkas `static/CNAME` sudah disiapkan).
+3. **Settings → Pages → Custom domain**: `boyolali.pks.my.id`, lalu pasang catatan CNAME di DNS.
+   Berkas CNAME di repositori tidak dipakai karena situs terbit lewat GitHub Actions.

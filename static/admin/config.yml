@@ -8,11 +8,15 @@ backend:
   name: github
   repo: pksboyolali/pksboyolali.github.io
   branch: main
-# Ganti kedua alamat di bawah menjadi https://boyolali.pks.id setelah domain aktif.
-# Sveltia memakai "origin" dari site_url untuk menyusun alamat gambar media,
-# jadi nilai ini harus persis sama dengan alamat tempat situs dibuka.
-site_url: https://pksboyolali.github.io
-display_url: https://pksboyolali.github.io
+  # Hanya masuk dengan token. Tombol "Sign in with GitHub" dimatikan karena
+  # tanpa server OAuth tersendiri tombol itu pasti gagal (lihat PANDUAN-PASANG 6d).
+  # Hapus baris di bawah ini setelah OAuth GitHub benar-benar disiapkan.
+  auth_methods: [token]
+# Alamat domain yang sedang dipakai. Harus persis sama dengan alamat tempat situs
+# dibuka, karena Sveltia memakai "origin" dari site_url untuk menyusun alamat gambar.
+# Bila nanti pindah ke boyolali.pks.id, ubah kedua baris ini juga.
+site_url: https://boyolali.pks.my.id
+display_url: https://boyolali.pks.my.id
 media_folder: static/images/uploads
 public_folder: /images/uploads
 # Judul dan logo pada halaman masuk admin (menggantikan logo Sveltia).
