@@ -2,7 +2,7 @@
 title: Bismillah
 slug: bismillah
 date: 2026-11-04T22:54:00
-draft: false
+draft: true
 categories:
   - Kiprah Kami
   - Fraksi PKS
